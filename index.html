@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+<title>つぶやきメモ</title>
+<meta name="theme-color" content="#0b0d10" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="つぶやきメモ" />
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIuOBpOOBtuOChOOBjeODoeODoiIsICJzaG9ydF9uYW1lIjogIuOBpOOBtuOChOOBjeODoeODoiIsICJzdGFydF91cmwiOiAiLiIsICJzY29wZSI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwYjBkMTAiLCAidGhlbWVfY29sb3IiOiAiIzBiMGQxMCIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQVlBQUFCUzNHd0hBQUFGc2tsRVFWUjRuTzNkUzI0a054Q0U0V3pCTzhPQXR6Nkx6K0ZUK2h3K2k3Y0NCSzNIcTVaTFBmMG9WdkdSa2ZGLzY0RlVKQ05JZHJkR3VrUXl2LzcyKzQvVno0QnhQai9lTDZ1ZllXdnB3eEIyUkt3dHhmUnZUT2p4ek93eVRQdG1CQjh0WmhWaCtEY2grRGhqZEJHR2ZYR0NqNTVHRmFIN0Z5WDRHS2wzRWQ1NmZqSENqOUY2WjZ4TG13ZytWdWh4R3B3K0FRZy9WdW1SdlZNRklQeFk3V3dHRHhlQThDT0xNMWs4VkFEQ2oyeU9acks1QUlRZldSM0pabE1CQ0QreWE4M283Z0lRZnFob3llcXVBaEIrcU5tYjJaY0ZJUHhRdFNlN1hYOFVBbER6dEFEcy9sRDNLc01QQzBENFVjV3pMSE1GZ3JXN0JXRDNSeldQTXMwSkFHcy9GWURkSDFYZHl6WW5BS3g5S3dDN1A2cTd6VGduQUt4OUZZRGRIeTYyV2VjRWdEVUtBR3R2RVZ4LzRPZWFlVTRBV0tNQXNFWUJZSTBDd05xRkY4Qnd4Z2tBYXhRQTFpZ0FyRkVBV0tNQXNFWUJZSTBDd0JvRmdEVUtBR3NVQU5Zb0FLeFJBRmlqQUxCR0FXQ05Bc0FhQllBMUNnQnJGQURXS0FDc1VRQllvd0N3UmdGZ2pRTEFHZ1dBdFY5V1A4QksvLzc5NSs1Lys4ZGYvd3g4a3Y0cWo2MG5xOThNMXhLS1I3S0h4V0dNUFZrVW9FY29IbGtkbHNwam02RjBBVWFHNDlic3NGUWUyMHdsQ3pBekhGdXpnbEo5ZkRPVktzQ3FZTndhRlpUcTQxdWhSQUd5QkdPcmQwZ2N4cmlDZkFFeUJtUHJiRWlxajI4MTZRL0Nzb2NqNHR3elZoOWZCcklGVUovNFNwVFhRdTRLcERyWnJWY0ZsM0d1Sm5zQ3FHa0p0R3I0RlVrVlFEMFllNTdmWVl5WnlCUkFiV0tkS2EyVlRBR3FlQllPcGVCVUlWR0Fhc0c0Tng2SE1XWWtVUUJnbFBRRlVObEpXbTNINVRER3JOSVhBQmdwOVFkaENqc0lYc3Y4NFJnbkFLeFJBRmlqQUxDV3RnRGMvK3ZJdkpacEN3RE1RQUZnalFMQUdnV0FOUW9BYXhRQTFpZ0FyRkVBV0V0YmdNdy9RSVUybWRjeWJRR0FHU2dBckZFQVdFdGRnTXgzUit5VGZRMVRGd0FZTFgwQnN1OGdlRXhoN2RJWEFCaEpvZ0FLT3dtK1Uxa3ppUUlBbzhnVVFHVkhnZFpheVJRQUdFR3FBRW83aXl1MU5aSXFBTkNiWEFIVWRoZ25pbXNqVjRBSXpZbXVUblZOSkFzUW9UdmhGU212aFd3QklyUW52Z3IxTlpBdVFJVCtBaWlyTVBmeUJZaW9zUkJxcXN4NWlRSkUxRmtRQlpYbXVrd0JJbW90VEZiVjVyaFVBU0xxTFZBbUZlZTJYQUVpYWk3VWFsWG50R1FCSXVvdTJBcVY1N0pzQVNKcUw5d3MxZWV3ZEFFaTZpL2dTQTV6bC9ydkJQZVcrVzlWWmVJUS9LdnlKOENXMDhJZTVUWkhWZ1dJOEZ2Z0ZvNXpZMWVBQ00rRmZzVjFUaXdMRU9HNzRQYzR6NFZ0QVNLOEYvN0tmUTZzQ3hEaEhRRG5zVjladlEzNmlzdmJwQVQvZi9ZbndKWkRNQnpHMklJQzNLZ2NrTXBqTzRvQzNGRXhLQlhIMUFNRmVLQlNZQ3FOcFRkZUJPK2crdUtZNEwvR0NiQ0RZcEFVbjNrRkNyQ1RVcUNVbm5VMXJrQUhaTDBTRWZ4Mm5BQUhaQXhheG1kU1FBRU95aFM0VE0raWhpdFFCNnV1UkFUL1BFNkFEbFlFa2ZEM1FRRmdqU3RRWjZPdlErejhmWEVDZERZeW9JUy9Qd29BYTF5QkJ1cDFIV0xuSDRjVFlLQWV3U1g4WTFFQVdLTUFnNTNad2RuOXg2TUFFeHdKTXVHZmd3Sk0waEpvd2o4UEJZQTFDakRSbnAyZDNYOHVDakRaczRBVC92a29BS3hSZ0FYdTdmVHMvbXRRQUZoNysveDR2NngrQ0VmYkhaL2RmNDNQai9jTEp3Q3NVUUJZb3dDd2RvbUk0UDhFd05IWGF3QmVDTVBOTmZOY2dXQ05Bc0RhVndHNEJzSEZOdXVjQUxEMnJRQ2NBcWp1TnVPY0FMRDJVd0U0QlZEVnZXeHpBc0RhM1FKd0NxQ2FSNW5tQklDMWh3WGdGRUFWejdMODlBU2dCRkQzS3NOY2dXRHRaUUU0QmFCcVQzWjNuUUNVQUdyMlpuYjNGWWdTUUVWTFZwdGVBMUFDWk5lYTBlWVh3WlFBV1IzSjVxRjNnU2dCc2ptYXljTnZnMUlDWkhFbWk2YytCNkFFV08xc0JrOS9FRVlKc0VxUDdIVU5MNzlmQ0RQMDNIUzcvaWdFcHdGRzY1MnhZWUhsTkVCUG96Ylg0VHMyUmNBWm8yOFYwNjRzRkFFdFpsMm5wOS9aS1FLZW1mMDZjdW1MVnNxQWlMVnZucVI3MTRaUzFKYnRuY0wvQUtZUXhxNUk1YnBlQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIn0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBWUFBQUQwZU5UNkFBQVJ2RWxFUVZSNG5PM2RUWTRiUjlZRjBKVFJNMEdBcHIyV1hrZXZzdGZSYSttcEFjTmpmUU45WmJOVUxKTDVHL0hlUFdmc1FUSXk4dDJiUVpiOFpXRktYNzk5L3pINkdnQ084T2NmdjM4WmZRMTg1S1lNSXVBQmZsSVF4ckRvRnhEMkFPc29CZWV6d0NjUStBREhVZ2lPWjBFUElQQUJycVVRN0djQk54TDZBSE5RQnJheGFDc0lmWUM1S1FPdnMxQlBDSDJBbXBTQnh5ek9Kd1EvUUErS3dIMFc1WWJRQitoTkdmaWJoVmdFUDBBYVJTQzhBQWgrZ0d6SlJTRHlnd3QrQUc0bEZvR29EeXo0QVhna3FRaEVmRkRCRDhBYUNVWGd0OUVYY0RiaEQ4QmFDZG5SdHVFazNEd0F6dGYxTktEZGh4TDhBSnloV3hGbzlSV0E4QWZnTE4weXBrV2I2WFpUQUpoYmg5T0E4aWNBd2grQXEzWEludElGb01NTkFLQ202aGxVOGdpaitxSUQwRXZGcndUS25RQUlmd0JtVXpHYlNoV0FpZ3NNUUlacUdWWGl5S0xhb2dLUXJjSlhBdE9mQUFoL0FLcXBrRjFURjRBS0N3Z0E5OHllWWRNV2dOa1hEZ0NlbVRuTHBpd0FNeThZQUt3eGE2Wk5Wd0JtWFNnQTJHckdiSnVxQU15NFFBQndoTmt5YnBvQ01OdkNBTURSWnNxNktRckFUQXNDQUdlYUpmT0dGNEJaRmdJQXJqSkQ5ZzB0QURNc0FBQ01NRG9EaHhXQTBSOGNBRVlibVlWRENvRHdCNENmUm1YaTVRVkErQVBBZXlPeThkSUNJUHdCNEw2ck0vS3lBaUQ4QWVDeEs3UHlrZ0lnL0FIZ05WZGw1dkIvQndBQXVON3BCY0RiUHdDc2MwVjJubG9BaEQ4QWJITjJocDVXQUlRL0FPeHpacGI2RFFBQUJEcWxBSGo3QjRCam5KV3BoeGNBNFE4QXh6b2pXdzh0QU1JZkFNNXhkTWI2RFFBQUJEcXNBSGo3QjRCekhabTFoeFFBNFE4QTF6Z3FjMzBGQUFDQmRoY0FiLzhBY0swanN0Y0pBQUFFMmxVQXZQMER3Qmg3TTNoekFSRCtBRERXbml6MkZRQUFCTnBVQUx6OUE4QWN0bWF5RXdBQUNMUzZBSGo3QjRDNWJNbG1Kd0FBRUdoVkFmRDJEd0J6V3B2UlRnQUFJTkRMQmNEYlB3RE1iVTFXT3dFQWdFQXZGUUJ2L3dCUXc2dVo3UVFBQUFJcEFBQVE2R2tCY1B3UEFMVzhrdDFPQUFBZzBNTUM0TzBmQUdwNmx1Rk9BQUFna0FJQUFJRStMUUNPL3dHZ3RrZFo3Z1FBQUFJcEFBQVE2RzRCY1B3UEFEMThsdWxPQUFBZ2tBSUFBSUUrRkFESC93RFF5NzFzZHdJQUFJRVVBQUFJcEFBQVFLQjNCY0QzL3dEUTA2OFo3d1FBQUFJcEFBQVFTQUVBZ0VCL0ZRRGYvd05BYjdkWjd3UUFBQUlwQUFBUVNBRUFnRUFLQUFBRSttMVovQUFRQUZLOFpiNFRBQUFJcEFBQVFDQUZBQUFDS1FBQUVFZ0JBSUJBQ2dBQUJGSUFBQ0RRRi84R0FBRGtjUUlBQUlFVUFBQUlwQUFBUUNBRkFBQUNLUUFBRUVnQkFJQkFDZ0FBQkZJQUFDQ1FBZ0FBZ1JRQUFBaWtBQUJBSUFVQUFBSXBBQUFRU0FFQWdFQUtBQUFFVWdBQUlKQUNBQUNCRkFBQUNLUUFBRUFnQlFBQUFpa0FBQkJJQVFDQVFBb0FBQVJTQUFBZ2tBSUFBSUVVQUFBSXBBQUFRQ0FGQUFBQ0tRQUFFRWdCQUlCQUNnQUFCRklBQUNDUUFnQUFnUlFBQUFpa0FBQkFJQVVBQUFJcEFBQVFTQUVBZ0VBS0FBQUVVZ0FBSUpBQ0FBQ0JGQUFBQ0tRQUFFQWdCUUFBQWlrQUFCQklBUUNBUUFvQUFBUlNBQUFna0FJQUFJRVVBQUFJcEFBQVFDQUZBQUFDS1FBQUVFZ0JBSUJBQ2dBQUJGSUFBQ0NRQWdBQWdSUUFBQWlrQUFCQUlBVUFBQUw5WS9RRndCYi8rOCsvVnYzMy8vejNmMCs2RWpxeXYwanc1ZXUzN3o5R1h3UThzbllZcjJGd1o3TzNTS1lBTUkwemgvRWFCbmRQOWhlOHB3QXd4Q3pEK0ZXR2RpMzJGenluQUhDWmFrUDVIb042YnZZWXZFNEI0RlFkQnZKbkRPbzUyR093alFMQUtUb1A1VjhaMG1QWVk3Q1BBc0Joa2dieVp3enFjOWxqOWhqSFVRRFl6VkQreUpBK2xqMzJrVDNHWGdvQXV4ak16eG5VMjloYno5bGI3S0VBc0luaHZKNWgvUnA3YXoxN2l5MFVBRll4blBjenJPK3p0L2F6dDFqRC93eUlseG5ReDdDT0gxbVRZMWhIMW5BQ3dGT0d5bm5TMzlqc3JmT2s3eTJlVXdENGxPRjhqZFJCYlg5ZEkzVi84Wnl2QUxqTGNMNU80bG9uZnVaUnJEV2ZjUUxBTzRiRldOM2YxdXl2c2Jydkw5WnhBc0JmRE9meE90K0R6cCt0Q3ZlQVcwNEFNQlFtMU8xTnpSNmJUN2M5eG5vS1FEaURlVzdWaDdUOU5iZnErNHQ5ZkFVUXpIQ2VYK1Y3VlBuYVU3aEgyUlNBVUI3OE9pcmVxNHJYbk1xOXl1VXJnREFlOXJxcUhOZmFZM1ZWMldNY3d3bEFFSU81dGdyM3I4STE4am4zTDRzQ0VNS0QzY1BNOTNIbWErTjE3bU1PQlNDQUI3cVhHZS9uak5mRWR1NW5CZ1dnT1E5eVR6UGQxNW11aGVPNHIvMHBBSTE1Z0h1YjRmN09jQTJjeC8zdFRRRm95b01MSE1FczZVc0JnTUpHRG1mQkFMVXBBQTBaekZsRzNHOTdMSXY3M1pNQ0FBMWNPYUNGQWZTZ0FEUmpPT2U2NHQ3Ylg3bmMrMzRVZ0VZOG9KeTVCK3d2N0lGZUZBQUFDS1FBTktHWjgrYU12V0IvOGNaZTZFTUJhTUFEQ1Z6SnpPbEJBU2pPZzhnOVIrNExlNHg3N0l2NkZBQm82b2dCYmNoRFh3cEFZWVl6TUpJWlZKc0NBSTN0R2RDR08vU21BQlJsT1BPcUxYdkYvdUpWOWtwZENnQUFCRklBQ3RLNFdXdk5uckcvV011ZXFVa0JBSUJBQ2tBeG1qWmJ2YkozN0MrMnNuZnFVUUFBSUpBQ0FBQ0JGSUJDSExHeDE2TTlaSCt4bHoxVWl3SUFBSUVVZ0NJMGE2QUNzNm9PQlFEQzNCdlFoamJrVVFBQUlKQUNVSUMzTTZBU002c0dCUUFDM1E1b3d4b3lLUUNUTTV5QmlzeXUrU2tBQUJCSUFRQ0FRUDhZZlFIQUdJNW9JWnNUZ0lrWjBFQmxadGpjRkFBQUNLUUFBRUFnQlFBQUFpa0FBQkJJQVppVUg4OEFIWmhsODFJQUFDQ1FBZ0FBZ1JRQUFBaWtBQUJBSUFVQUFBSXBBQUFRU0FFQWdFQUtBQUFFVWdBQUlKQUNBQUNCRkFBQUNLUUFBRUFnQlFBQUFpa0FBQkJJQVFDQVFBckFwUDc1Ny8rT3ZnU0EzY3l5ZVNrQUFCQklBUUNBUUFvQUFBUlNBQUFna0FJQUFJRVVnSW41OVN4UW1SazJOd1VBQUFJcEFBQVFTQUVBZ0VBS3dPUjhod1pVWkhiTlR3RUFnRUFLUUFHYU5GQ0ptVldEQWdBQWdSUUFBQWlrQUJUaFNBMm93S3lxUXdFQWdFQUtBQUFFVWdBS2NiUUd6TXlNcWtVQkFJQkFDZ0FBQkZJQWluSEVCc3pJYktwSEFRQ0FRQXBBUVpvMk1CTXpxU1lGQUFBQ0tRQkZhZHpBRE15aXVoUUFBQWlrQUJTbWVRTWptVUcxS1FBQUVFZ0JLRTREQjBZd2UrcFRBQnJ3SUFKWE1uTjZVQUFBSUpBQzBJUkdEbHpCck9sREFRQ0FRQXBBSTVvNWNDWXpwaGNGQUFBQ0tRRE5hT2pBR2N5V2ZoUUFBQWlrQURTa3FRTkhNbE42VWdBQUlKQUMwSlRHRGh6QkxPbExBV2pNZ3d2c1lZYjBwZ0EwNXdFR3RqQTcrbE1BQUNDUUFoQkFrd2ZXTURNeUtBQWhQTkRBSzh5S0hBcEFFQTgyOElnWmtVVUJDT01CQis0eEcvSW9BSUU4Nk1BdE15R1RBaERLQXc4c2kxbVFUQUVJNXNHSGJHWkFOZ1VnbkFFQW1UejdLQUFZQkJER004K3lLQUFBRUVrQllGa1did1NRd3JQT0d3V0F2eGdNMEp0bm5Gc0tBTzhZRU5DVFo1dGZLUUI4WUZCQUw1NXA3bEVBdU12QWdCNDh5M3hHQWVCVEJnZlU1aG5tRVFXQWh3d1FxTW16eXpNS0FFOFpKRkNMWjVaWEtBQzh4RUNCR2p5cnZFb0I0R1VHQzh6Tk04b2FDZ0NyR0RBd0o4OG1heWtBckdiUXdGdzhrMnloQUxDSmdRTno4Q3l5bFFMQVpnWVBqT1VaWkE4RmdGME1JQmpEczhkZUNnQzdHVVJ3TGM4Y1IxQUFPSVNCQk5md3JIRVVCWURER0V4d0xzOFlSL3J5OWR2M0g2TXZnbjcrOTU5L2piNEVhRVB3Y3dZbkFKekN3SUpqZUpZNGl3TEFhUXd1Mk1jenhKa1VBRTVsZ01FMm5oM09wZ0J3T29NTTF2SE1jQVUvQXVSU2Zod0lueFA4WE1rSkFKY3k0T0ErendaWFV3QzRuRUVINzNrbUdFRUJZQWdERDM3eUxEQ0tBc0F3QmgvcFBBT01wQUF3bEFGSUtudWYwUlFBaGpNSVNXUFBNd01GZ0NrWWlLU3cxNW1GZndlQTZmaTNBdWhJOERNYkp3Qk14NkNrRzN1YUdUa0JZR3BPQTZoTThETXpKd0JNelFDbEtudVgyU2tBVE04Z3BScDdsZ29VQUVvd1VLbkNYcVVLQllBeURGWm1aNDlTaVFKQUtRWXNzN0kzcVVZQm9CeURsdG5ZazFUa3p3QXB6WjhKTXBMZ3B6SW5BSlJtQURPS3ZVZDFUZ0JvdzJrQVZ4RDhkT0VFZ0RZTVpzNW1qOUdKQWtBckJqUm5zYmZvUmdHZ0hZT2FvOWxUZEtRQTBKS0J6VkhzSmJwU0FHakw0R1l2ZTRqT0ZBQmFNOERaeXQ2aE8zOEdTQXgvSnNnckJEOHBuQUFRdzJEbkdYdUVKRTRBaU9RMGdGdUNuMFJPQUloazRQUEdYaUNWQWtBc2d4OTdnR1MrQW9ERlZ3SnBCRDg0QVlCbFdRUkNFdmNhZmxJQTRQOEpodjdjWS9pYkFnQTNCRVJmN2kyOHB3REFMd1JGUCs0cGZLUUF3QjBDb3cvM0V1NVRBT0FUZ3FNKzl4QStwd0RBQXdLa0x2Y09IbE1BNEFsQlVvOTdCcy81aDRCZ0JmOWcwTndFUDd6T0NRQ3NJR0RtNWQ3QU9nb0FyQ1JvNXVPZXdIb0tBR3dnY09iaFhzQTJmZ01BTy9sZHdCaUNIL1p4QWdBN0NhTHJXWFBZVHdHQUF3aWs2MWhyT0lZQ0FBY1JUT2V6eG5BY3Z3R0FFL2hkd0xFRVB4elBDUUNjUUdBZHgxckNPUlFBT0luZzJzOGF3bmtVQURpUkFOdk8yc0c1RkFBNG1TQmJ6NXJCK1JRQXVJQkFlNTIxZ21zb0FIQVJ3ZmFjTllMcktBQndJUUgzT1dzRDExSUE0R0tDN2lOckF0ZFRBR0FBZ2ZjM2F3RmpLQUF3aU9DekJqQ1NBZ0FESlFkZzhtZUhHU2dBTUZoaUVDWitacGlOQWdBVFNBckVwTThLTTFNQVlCSUp3Wmp3R2FFS0JRQW0wamtnTzM4MnFFZ0JnTWwwRE1xT253bXFVd0JnUXAwQ3M5Tm5nVTRVQUpoVWgrRHM4Qm1nS3dVQUpsWTVRQ3RmT3lSUUFHQnlGWU8wNGpWREdnVUFDcWdVcUpXdUZaSXBBRkJFaFdDdGNJM0FUd29BRkRKendNNThiY0JIQ2dBQUJGSUFvSmdaMzdSbnZDYmdNUVVBQ3BvcGNHZTZGdUIxQ2dBVU5VUHd6bkFOd0RZS0FCUTJNb0NGUDlTbUFFQnhJNEpZK0VOOUNnQTBjR1VnQzMvb1FRRUFnRUFLQURSeHhadTV0My9vUXdHQVJzNE1hT0VQdlNnQUFCQklBWUJtem5oVDkvWVAvU2dBME5DUmdTMzhvU2NGQUFBQ0tRRFExQkZ2N3Q3K29TOEZBQnJiRStEQ0gzcFRBQUFna0FJQXpXMTVrL2YyRC8zOTl1Y2Z2MzhaZlJIQXVkWUV1dkNIL3Y3ODQvY3ZUZ0FBSUpBQ0FBQ0JGQUFJOGNyUnZ1Ti95S0VBQUVBZ0JRQ0NQSHJEOS9ZUFdSUUFBQWlrQUVDWWUyLzYzdjRoejIvTDh2UHZBVWRmQ0FCd3ZyZk1kd0lBQUlFVUFBQUlwQUJBb052di9IMy9ENWtVQUFBSTlGY0I4RU5BQU9qdE51dWRBQUJBb0hkdi9WKy9mZjh4NmtJQWdITTVBUUNBY084S2dOOEJBRUJQdjJhOEV3QUFDS1FBQUVBZ0JRQUFBbjBvQUg0SEFBQzkzTXQySndBQUVFZ0JBSUJBZHd1QXJ3RUFvSWZQTXQwSkFBQUVVZ0FBSU5DbkJjRFhBQUJRMjZNc2R3SUFBSUVVQUFBSTlMQUErQm9BQUdwNmx1Rk9BQUFnME5NQzRCUUFBR3A1SmJ1ZEFBQkFJQVVBQUFLOVZBQjhEUUFBTmJ5YTJVNEFBQ0RReXdYQUtRQUF6RzFOVmpzQkFJQkFxd3FBVXdBQW1OUGFqSFlDQUFDQlZoY0Fwd0FBTUpjdDJld0VBQUFDYlNvQVRnRUFZQTViTTlrSkFBQUUybHdBbkFJQXdGaDdzbmpYQ1lBU0FBQmo3TTFnWHdFQVFLRGRCY0FwQUFCYzY0anNkUUlBQUlFT0tRQk9BUURnR2tkbDdtRW5BRW9BQUp6cnlLejFGUUFBQkRxMEFEZ0ZBSUJ6SEoyeGg1OEFLQUVBY0t3enN2V1Vyd0NVQUFBNHhsbVo2amNBQUJEb3RBTGdGQUFBOWprelMwODlBVkFDQUdDYnN6UDA5SzhBbEFBQVdPZUs3UFFiQUFBSWRFa0JjQW9BQUsrNUtqTXZPd0ZRQWdEZ3NTdXo4dEt2QUpRQUFManY2b3k4L0RjQVNnQUF2RGNpRzRmOENGQUpBSUNmUm1YaXNMOENVQUlBU0RjeUM0ZitHYUFTQUVDcTBSazQvTjhCR0wwQUFIQzFHYkp2ZUFGWWxqa1dBZ0N1TUV2bVRWRUFsbVdlQlFHQXM4eVVkZE1VZ0dXWmEyRUE0RWl6WmR4VUJXQlo1bHNnQU5ocnhteWJyZ0FzeTV3TEJRQmJ6SnBwVXhhQVpabDN3UURnVlRObjJiUUZZRm5tWGpnQWVHVDJESnU2QUN6TC9Bc0lBTCtxa0YzVFgrQ3RyOSsrL3hoOURRRHdtUXJCLzJiNkU0QmJsUllXZ0N6Vk1xcFVBVmlXZWdzTVFIOFZzNm5jQmQveWxRQUFJMVVNL2pmbFRnQnVWVjU0QUdxcm5rR2xDOEN5MUw4QkFOVFRJWHZLZjRCYnZoSUE0RXdkZ3Y5TitST0FXNTF1REFCejZaWXhyVDdNTGFjQkFCeWhXL0MvYWZtaGJpa0NBR3pSTmZqZnRQb0s0Sjd1TnhDQTR5VmtSL3NQZU10cEFBQ1BKQVQvbTVnUGVrc1JBT0JXVXZDL2lmdkF0eFFCZ0d5SndmOG05b1BmVWdRQXNpUUgvNXY0QmJpbENBRDBKdmovWmlFK29Rd0E5Q0QwNzdNb1R5Z0NBRFVKL3Njc3pncktBTURjaFA3ckxOUkd5Z0RBSElUK05oYnRBTW9Bd0xXRS9uNFc4QVFLQWNDeEJQN3hMT2dGRkFLQWRRVCsrU3p3SUVvQndFL0NmZ3lMUGlrRkFlaEN3TS9wL3dEdEdyNjZNbjdmSFFBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyJ9XX0=" />
+<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFPUlEQVR4nO3cTU4cMRCG4RqUXYSUbc6Sc+SUOUfOki0SYp2smjRDd4//XfX5fdYRtO2XwjMEbubA1+dvf2c/A+q9vb7cZj/DlAcg4DXMCHzYJyTitY2Ku+snIWIc6Rl3lw9MyEjRI+yn1h+QmJGqRyvNvkIIGTVaTesmE5qYUatVQ1VfFYSMHmqmdfGEJmb0UtNWUdDEjN5KG8sOmpgxSklrWUETM0bLbS45aGLGLDntJQVNzJgttcGHQRMzvEhpsfmPvoGZLoNmOsObR02eBk3M8OqqTa4ckHIYNNMZ3p01+iloYkYUR61y5YCUD0EznRHNfbNMaEghaEh5D5rrBqLat8uEhhSChpQnM64biG9rmAkNKQQNKQQNKTfuz1DChIYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoYUgoaUL7MfYKQ/v348/Dfff/4e8CTtKK6phvQfmkk57CteQ1BdVwuSQdce+JlZIaitpyeJoHsd+JlRIaiuq6fwLwpHH/qoz6m6rt5CT2gPB9B6qimuaaSwE9rDwZu1fQ7FNY0WMmhvG97ieRTXNEOoK4f3TS79Vq26rhlCTmivSsL0HnM0YYKOcvA5z6m4ptnc/+g70mYq287B+/UjzISOJOWLkC/UPlwHHfnQr55ddV0euA3a+8alOFqD6rq8cBs0UMJl0J4nQK79WlTX5YnLoIFS7t+2U+B1miliQkOKu6CZZnF4PCt3QQM1CBpSCBpSCBpSCBpVvL0wJGhU8fbfSQkaUggaUggaUggaUggaUtwF7e1VM855PCt3QQM1CBpSCBpSXAbt8W6Gj7yekcuggVJug/Y6AeD7bNwGbeZ741bl/UxcBw3kch+094mwkghn4T5osxgbqS7KGYQI2izOhiqKtPdhggZShAo60qRQEW3PQwVtFm+DI4u41+GCNou50dFE3eOQQZvF3fAIIu9t2KDNYm+8V9H3NHTQZvEPwBOFvQwfNLAnEbTCZJlNZQ8lgjbTOZAZlPbu9vX529/ZD9Gatz8g6JVSyBuZCb2neFCtqe6RZNBmugfWgvLeyAZtpn1wpdT3RDpoM/0DzLHCXki+KDyz6ovFFULeyE/ovZUOdrPampcK2mytA15prZulrhz3VK8gK4a8WW5C7ykevOKaciwdtJlWAEprKbX0leNe1CsIIf+3/ITeixhGxGfuiaDvRAok0rOOQtAHIoQS4RlnIOgTnoPx/GyzEfQFj+F4fCZPeJcj0ex3QAg5DRM60cygiDkdQWeYERYx5yHoTCMDI+Z8BF1gRGjEXIagC/UMjpjLEXSFHuERcx2CrtQyQGKuR9ANtAiRmNsgaEgh6EZqJizTuR2CbqgkTGJui6AbywmUmNsj6A5SQiXmPgi6k6tgibkfgoYUgu7oaBIznfsiaEgh6M72E5np3N/T2+vLbfZDAC28vb7cmNCQQtCQcjMz4ze/oeD9ysE9GtFtDXPlgBSChpT3oLl2IKp9u0xoSCFoSPkQNNcORHPfLBMaUj4FzZRGFEetHk5oooZ3Z41y5YCU06CZ0vDqqs3LCU3U8OZRk1w5IOVh0ExpeJHSYtKEJmrMltpg8pWDqDFLTntZd2iixmi5zWW/KCRqjFLSWtG7HESN3kobK37bjqjRS01bTaLkt8bRQosh2eQHK0xr1GrVUPMQmdbI0XoYNv/RN9MaqXq00jU+pjWO9Bx6w6Ypca9t1HfuKdcD4l7DjOuni/sugWvw8PrpH8jgrLqzHtV+AAAAAElFTkSuQmCC" />
+<style>
+  :root {
+    --bg: #0b0d10;
+    --panel: #16191c;
+    --panel-2: #0b0d10;
+    --border: #1d2226;
+    --border-2: #2a2f34;
+    --border-3: #232830;
+    --text: #e7e9ea;
+    --muted: #8b98a5;
+    --muted-2: #5b6570;
+    --accent: #f2b84b;
+    --accent-hover: #f5c66a;
+    --accent-text: #1a1400;
+    --like: #f2415c;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 576px; margin: 0 auto; }
+  button { font-family: inherit; cursor: pointer; }
+  input, textarea { font-family: inherit; color: inherit; }
+
+  /* header */
+  header {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(11,13,16,0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .header-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 16px;
+  }
+  .logo { display: flex; align-items: center; gap: 8px; }
+  .logo span { font-weight: 700; font-size: 17px; letter-spacing: -0.01em; }
+  .header-actions { display: flex; align-items: center; gap: 4px; }
+  .icon-btn {
+    background: transparent; border: none; color: var(--muted);
+    padding: 8px; border-radius: 999px; display: flex; align-items: center; justify-content: center;
+    transition: background-color .15s, color .15s;
+  }
+  .icon-btn:hover { background: rgba(255,255,255,0.1); }
+  .icon-btn.active { background: rgba(242,184,75,0.15); color: var(--accent); }
+  .menu-wrap { position: relative; }
+  .menu-dropdown {
+    display: none; flex-direction: column; gap: 2px;
+    position: absolute; top: calc(100% + 8px); right: 0; min-width: 210px;
+    background: var(--panel, #16191d); border: 1px solid var(--border-2); border-radius: 14px;
+    padding: 6px; box-shadow: 0 12px 28px rgba(0,0,0,0.45); z-index: 30;
+  }
+  .menu-dropdown.open { display: flex; }
+  .menu-item {
+    display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+    background: none; border: none; color: var(--text); font-size: 14px;
+    padding: 10px 12px; border-radius: 10px; transition: background-color .15s, color .15s;
+  }
+  .menu-item svg { flex-shrink: 0; color: var(--muted); transition: color .15s; }
+  .menu-item:hover { background: rgba(255,255,255,0.08); }
+  .menu-item.active { color: var(--accent); }
+  .menu-item.active svg { color: var(--accent); }
+  .install-btn {
+    display: flex; align-items: center; gap: 5px;
+    background: rgba(242,184,75,0.12); color: var(--accent);
+    border: 1px solid rgba(242,184,75,0.35);
+    padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 700;
+    transition: background-color .15s, transform .1s;
+  }
+  .install-btn:hover { background: rgba(242,184,75,0.2); }
+  .install-btn:active { transform: scale(0.97); }
+  .install-step { padding: 8px 0; border-bottom: 1px solid var(--border-3); font-size: 14px; line-height: 1.9; }
+  .install-step:last-child { border-bottom: none; }
+  .install-step strong { color: var(--accent); font-weight: 700; }
+
+  .search-bar-wrap { padding: 0 16px 12px; display: none; }
+  .search-bar-wrap.open { display: block; }
+  .search-bar {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--panel); border: 1px solid var(--border-2);
+    border-radius: 999px; padding: 8px 14px;
+  }
+  .search-bar:focus-within { border-color: rgba(242,184,75,0.6); }
+  .search-bar input { background: transparent; border: none; outline: none; font-size: 14px; width: 100%; }
+  .search-bar input::placeholder { color: var(--muted-2); }
+  .search-bar svg { flex-shrink: 0; color: var(--muted); }
+  .clear-btn { background: none; border: none; color: var(--muted); display: flex; }
+  .clear-btn:hover { color: white; }
+  .date-filter-bar-wrap { padding: 0 16px 12px; display: none; }
+  .date-filter-bar-wrap.open { display: block; }
+  .date-filter-bar {
+    display: flex; align-items: center; gap: 8px; background: var(--panel-2);
+    border: 1px solid var(--border-2); border-radius: 12px; padding: 8px 12px;
+  }
+  .date-filter-bar svg { flex-shrink: 0; color: var(--muted); }
+  .date-filter-bar input[type="date"] {
+    background: transparent; border: none; outline: none; font-size: 14px; color: var(--text); flex: 1;
+    font-family: inherit;
+  }
+  .date-filter-bar input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(0.7); cursor: pointer; }
+
+  /* compose */
+  .compose { border-bottom: 1px solid var(--border); padding: 12px 16px; display: flex; gap: 12px; }
+  .compose.hidden { display: none; }
+  .avatar {
+    width: 40px; height: 40px; border-radius: 999px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; color: white; overflow: hidden;
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .compose-body { flex: 1; min-width: 0; }
+  .compose textarea {
+    width: 100%; background: transparent; border: none; outline: none; resize: none;
+    font-size: 15px; line-height: 1.5; color: var(--text);
+  }
+  .compose textarea::placeholder { color: var(--muted-2); }
+  .compose-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 4px; }
+  .compose-footer-left { display: flex; align-items: center; gap: 10px; }
+  .compose-media-btn { padding: 6px; color: var(--accent); }
+  .compose-media-btn:hover { background: rgba(242,184,75,0.12); }
+  .char-count { font-size: 12px; color: var(--muted-2); }
+  .compose-preview { position: relative; display: inline-block; margin: 8px 0 4px; max-width: 220px; }
+  .compose-preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 8px 0 4px; max-width: 280px; }
+  .compose-preview-item { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--border-2); }
+  .compose-preview-item img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; cursor: zoom-in; }
+  .compose-preview img { width: 100%; max-height: 220px; object-fit: cover; border-radius: 14px; border: 1px solid var(--border-2); display: block; }
+  .compose-preview .remove-preview-btn,
+  .compose-preview-item .remove-preview-btn {
+    position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; border-radius: 999px;
+    background: rgba(0,0,0,0.65); color: #fff; border: none; display: flex; align-items: center; justify-content: center;
+  }
+  .compose-preview .remove-preview-btn:hover,
+  .compose-preview-item .remove-preview-btn:hover { background: rgba(0,0,0,0.85); }
+  .note-media { margin-top: 8px; border-radius: 14px; overflow: hidden; border: 1px solid var(--border-2); }
+  .note-media img { width: 100%; max-height: 420px; object-fit: cover; display: block; cursor: zoom-in; }
+  .note-media-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; border-radius: 14px; overflow: hidden; border: 1px solid var(--border-2); margin-top: 8px; }
+  .note-media-grid img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; cursor: zoom-in; }
+  .hashtag { color: var(--accent); cursor: pointer; }
+  .hashtag:hover { text-decoration: underline; }
+  .note-link { color: var(--accent); text-decoration: underline; word-break: break-all; }
+  .avatar-view-btn { padding: 5px; color: var(--muted); flex-shrink: 0; }
+  .avatar-view-btn:hover { color: var(--text); }
+  .lightbox-overlay { z-index: 60; background: rgba(0,0,0,0.92); }
+  .lightbox-panel { position: relative; max-width: 94vw; max-height: 88vh; display: flex; align-items: center; justify-content: center; }
+  .lightbox-panel img { max-width: 94vw; max-height: 88vh; object-fit: contain; border-radius: 8px; display: block; }
+  .lightbox-close { position: absolute; top: -44px; right: 0; color: #fff; background: rgba(255,255,255,0.12); border-radius: 999px; padding: 8px; }
+  .lightbox-close:hover { background: rgba(255,255,255,0.22); }
+  .data-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .data-actions .add-account-btn { margin-top: 0; }
+  .post-btn {
+    padding: 7px 18px; border-radius: 999px; border: none;
+    background: var(--accent); color: var(--accent-text);
+    font-size: 14px; font-weight: 700;
+    transition: background-color .15s, opacity .15s;
+  }
+  .post-btn:hover:not(:disabled) { background: var(--accent-hover); }
+  .post-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+  /* feed */
+  .empty-state { text-align: center; padding: 64px 24px; color: var(--muted-2); font-size: 14px; }
+  .note { padding: 12px 16px; border-bottom: 1px solid var(--border); display: flex; gap: 12px; transition: background-color .15s; }
+  .note:hover { background: rgba(255,255,255,0.02); }
+  .note-body { flex: 1; min-width: 0; }
+  .note-meta { display: flex; align-items: baseline; gap: 6px; font-size: 15px; flex-wrap: wrap; }
+  .note-meta .name { font-weight: 700; }
+  .note-meta .dim { color: var(--muted-2); font-size: 14px; }
+  .note-text { font-size: 15px; line-height: 1.55; margin: 2px 0 0; white-space: pre-wrap; word-break: break-word; }
+  .note-actions { display: flex; align-items: center; gap: 6px; margin-top: 10px; }
+  .heart-wrap { display: flex; align-items: center; color: var(--like); }
+  .heart-wrap.pop { animation: pop .35s ease-out; }
+  .like-count-btn { background: none; border: none; color: var(--muted); font-size: 14px; padding: 0; transition: color .15s; }
+  .like-count-btn:hover:not(:disabled) { color: var(--like); }
+  .like-count-btn:disabled { cursor: default; }
+  .liker-avatars { display: flex; margin-left: 8px; }
+  .liker-avatars .mini-avatar {
+    width: 20px; height: 20px; border-radius: 999px; border: 1px solid var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 9px; font-weight: 700; color: white; margin-left: -6px; overflow: hidden;
+  }
+  .liker-avatars .mini-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .liker-avatars .mini-avatar:first-child { margin-left: 0; }
+  .liker-avatars .more { background: var(--border-2); color: var(--muted); font-size: 8px; }
+  .del-note-btn { margin-left: auto; background: none; border: none; color: var(--muted-2); font-size: 12px; }
+  .del-note-btn:hover { color: var(--like); }
+  .bookmark-btn { background: none; border: none; color: var(--muted); display: flex; align-items: center; padding: 0; }
+  .bookmark-btn:hover { color: var(--accent); }
+  .bookmark-btn.active { color: var(--accent); }
+  .reply-btn {
+    background: none; border: none; color: var(--muted); font-size: 12px;
+    display: flex; align-items: center; gap: 4px; padding: 0;
+  }
+  .reply-btn:hover { color: var(--accent); }
+  .replies-list {
+    margin-top: 10px; padding-left: 14px; border-left: 2px solid var(--border-2);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .reply-item { display: flex; gap: 10px; }
+  .reply-item .avatar { width: 28px; height: 28px; font-size: 11px; }
+  .reply-body { flex: 1; min-width: 0; }
+  .reply-body .note-text { font-size: 14px; }
+  .reply-compose { display: flex; gap: 8px; margin-top: 10px; padding-left: 14px; align-items: flex-end; }
+  .reply-compose textarea {
+    flex: 1; background: var(--panel-2); border: 1px solid var(--border-2); border-radius: 10px;
+    padding: 8px 10px; font-size: 14px; color: var(--text); resize: none; outline: none; line-height: 1.4;
+  }
+  .reply-compose textarea:focus { border-color: rgba(242,184,75,0.6); }
+  .reply-send-btn {
+    padding: 7px 14px; border-radius: 999px; border: none;
+    background: var(--accent); color: var(--accent-text); font-size: 13px; font-weight: 700;
+  }
+  .reply-send-btn:hover { background: var(--accent-hover); }
+
+  /* toasts */
+  .toast-container {
+    position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+    z-index: 30; display: flex; flex-direction: column; gap: 8px; align-items: center;
+    width: 100%; max-width: 320px; padding: 0 16px; pointer-events: none;
+  }
+  .toast {
+    background: var(--panel); border: 1px solid var(--border-2); color: var(--text);
+    font-size: 12px; padding: 8px 14px; border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    display: flex; align-items: center; gap: 6px;
+    animation: fadeIn .2s ease-out;
+  }
+
+  /* modals */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 40;
+    background: rgba(0,0,0,0.6);
+    display: none; align-items: center; justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-overlay.settings-overlay.open { background: rgba(0,0,0,0.75); backdrop-filter: blur(2px); }
+  .modal {
+    background: var(--panel); width: 100%; border: 1px solid var(--border-2);
+    border-radius: 16px 16px 0 0;
+    max-height: 70vh; overflow-y: auto;
+  }
+  @media (min-width: 640px) {
+    .modal { max-width: 384px; border-radius: 16px; }
+    .modal.settings-modal { max-width: 512px; }
+    .modal-overlay { align-items: center; }
+  }
+  .modal-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 16px; border-bottom: 1px solid var(--border-2);
+    position: sticky; top: 0; background: var(--panel); z-index: 1;
+  }
+  .modal-header span { font-weight: 700; font-size: 15px; }
+  .modal-body { padding: 8px; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 4px; }
+  .gallery-grid img {
+    width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 10px;
+    border: 1px solid var(--border-2); cursor: zoom-in; display: block;
+  }
+  .gallery-empty { padding: 32px 16px; text-align: center; color: var(--muted-2); font-size: 14px; }
+  .liker-row { display: flex; align-items: center; gap: 12px; padding: 8px; }
+  .liker-row .mid-avatar {
+    width: 36px; height: 36px; border-radius: 999px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; color: white; overflow: hidden;
+  }
+  .liker-row .mid-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .liker-row .liker-name { font-size: 14px; font-weight: 600; }
+
+  /* settings modal specifics */
+  .settings-modal { display: flex; flex-direction: column; max-height: 88vh; }
+  .settings-modal .modal-header { padding: 16px 20px; font-size: 16px; }
+  .settings-body { padding: 20px; overflow-y: auto; }
+  .setting-block { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--border-3); }
+  .setting-block:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .setting-title { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .setting-title svg { color: var(--accent); }
+  .setting-desc { font-size: 12px; color: var(--muted); margin-bottom: 16px; line-height: 1.5; }
+  .setting-card {
+    background: var(--panel-2); border: 1px solid var(--border-2); border-radius: 12px;
+    padding: 14px 16px; display: flex; flex-direction: column; gap: 14px;
+  }
+  .slider-row { display: flex; align-items: center; gap: 12px; }
+  .slider-row label { font-size: 12px; color: var(--muted); width: 56px; flex-shrink: 0; }
+  .slider-row input[type=range] { flex: 1; accent-color: var(--accent); }
+  .slider-row .val { font-size: 14px; width: 56px; text-align: right; font-weight: 600; }
+
+  .number-row { display: flex; align-items: center; gap: 10px; }
+  .number-row label { font-size: 12px; color: var(--muted); width: 56px; flex-shrink: 0; }
+  .number-row input[type=number] {
+    width: 90px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border-2);
+    background: var(--panel); color: var(--text); font-size: 15px; font-weight: 600; outline: none;
+    -moz-appearance: textfield;
+  }
+  .number-row input[type=number]:focus { border-color: rgba(242,184,75,0.6); }
+  .number-row input[type=number]::-webkit-inner-spin-button,
+  .number-row input[type=number]::-webkit-outer-spin-button { opacity: 1; }
+  .number-row .unit { font-size: 13px; color: var(--muted); }
+
+  .account-row {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--panel-2); border: 1px solid var(--border-2); border-radius: 12px;
+    padding: 10px 12px; margin-bottom: 8px;
+  }
+  .account-row input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--accent); flex-shrink: 0; }
+  .avatar-edit { position: relative; width: 32px; height: 32px; flex-shrink: 0; }
+  .avatar-edit .avatar { width: 32px; height: 32px; font-size: 11px; }
+  .avatar-edit input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+  .account-row input[type=text] {
+    background: transparent; border: none; outline: none; font-size: 14px;
+    border-bottom: 1px solid transparent; padding-bottom: 2px; flex: 1; min-width: 0;
+  }
+  .account-row input[type=text]:focus { border-bottom-color: rgba(242,184,75,0.6); }
+  .emoji-input { max-width: 44px !important; flex: none !important; text-align: center; }
+  .del-btn {
+    background: none; border: none; color: var(--muted-2); padding: 6px; border-radius: 999px;
+    display: flex; flex-shrink: 0; transition: background-color .15s, color .15s;
+  }
+  .del-btn:hover { color: var(--like); background: rgba(242,65,92,0.1); }
+  .add-account-btn {
+    background: none; border: none; color: var(--accent); font-size: 14px; font-weight: 700;
+    display: flex; align-items: center; gap: 6px; margin-top: 4px; padding: 4px 0;
+  }
+  .add-account-btn:hover { opacity: 0.8; }
+
+  .settings-footer { padding: 14px 20px; border-top: 1px solid var(--border-2); flex-shrink: 0; }
+  .close-btn-full {
+    width: 100%; padding: 11px; border-radius: 999px; border: none;
+    background: var(--accent); color: var(--accent-text); font-size: 14px; font-weight: 700;
+    transition: background-color .15s;
+  }
+  .close-btn-full:hover { background: var(--accent-hover); }
+
+  .account-modal-body { padding: 20px; }
+  .field { margin-bottom: 18px; }
+  .field label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+  .field .hint { font-weight: normal; color: var(--muted); font-size: 12px; }
+  .field input[type=text] {
+    width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid var(--border-2);
+    background: var(--panel-2); font-size: 14px; outline: none;
+  }
+  .field input[type=text]:focus { border-color: rgba(242,184,75,0.6); }
+  .avatar-picker-row { display: flex; align-items: center; gap: 12px; }
+  .avatar-picker-row .avatar-edit { width: 56px; height: 56px; }
+  .avatar-picker-row .avatar-edit .avatar { width: 56px; height: 56px; font-size: 20px; }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pop { 0% { transform: scale(1); } 40% { transform: scale(1.35); } 100% { transform: scale(1); } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="header-row">
+      <div class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2b84b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+        <span>つぶやきメモ</span>
+      </div>
+      <div class="header-actions">
+        <button class="install-btn" id="installBtn" aria-label="ホーム画面に追加" style="display:none">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>追加</span>
+        </button>
+        <button class="icon-btn" id="searchToggle" aria-label="検索">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <div class="menu-wrap">
+          <button class="icon-btn" id="menuToggle" aria-label="メニュー">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <div class="menu-dropdown" id="menuDropdown">
+            <button class="menu-item" id="dateFilterToggle" aria-label="日付で絞り込む">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>日付で絞り込む</span>
+            </button>
+            <button class="menu-item" id="bookmarkFilterToggle" aria-label="ブックマークだけ表示">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              <span>ブックマークのみ表示</span>
+            </button>
+            <button class="menu-item" id="postGalleryToggle" aria-label="投稿した写真を見る">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="2"/><rect x="7" y="7" width="14" height="14" rx="2"/></svg>
+              <span>投稿した写真</span>
+            </button>
+            <button class="menu-item" id="accountToggle" aria-label="自分のアカウント">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>自分のアカウント</span>
+            </button>
+            <button class="menu-item" id="settingsToggle" aria-label="設定">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              <span>設定</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-bar-wrap" id="searchBarWrap">
+      <div class="search-bar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="過去のメモを検索" />
+        <button class="clear-btn" id="clearSearch" style="display:none">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="date-filter-bar-wrap" id="dateFilterBarWrap">
+      <div class="date-filter-bar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <input type="date" id="dateFilterInput" />
+        <button class="clear-btn" id="clearDateFilter" style="display:none">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="compose" id="composeArea">
+    <div class="avatar" id="composeAvatar"></div>
+    <div class="compose-body">
+      <textarea id="draftInput" rows="2" maxlength="280" placeholder="いま、何を記録する?"></textarea>
+      <div class="compose-preview-grid" id="composePreviewGrid" style="display:none"></div>
+      <div class="compose-footer">
+        <div class="compose-footer-left">
+          <button class="icon-btn compose-media-btn" id="draftImageBtn" aria-label="写真を追加(最大4枚)">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5.5-5.5L5 21"/></svg>
+          </button>
+          <input type="file" id="draftImageFile" accept="image/*" multiple hidden />
+          <span class="char-count"><span id="charCount">0</span>/280</span>
+        </div>
+        <button class="post-btn" id="postBtn" disabled>投稿</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="feed"></div>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- likers modal -->
+<div class="modal-overlay" id="likersOverlay">
+  <div class="modal" id="likersModal">
+    <div class="modal-header">
+      <span>いいねしたアカウント</span>
+      <button class="icon-btn" id="likersClose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="modal-body" id="likersBody"></div>
+  </div>
+</div>
+
+<!-- gallery modal -->
+<div class="modal-overlay" id="galleryOverlay">
+  <div class="modal" id="galleryModal">
+    <div class="modal-header">
+      <span>投稿した写真</span>
+      <button class="icon-btn" id="galleryClose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="modal-body" id="galleryBody">
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- account modal -->
+<div class="modal-overlay" id="accountOverlay">
+  <div class="modal" id="accountModal" style="max-width:420px;">
+    <div class="modal-header">
+      <span>自分のアカウント設定</span>
+      <button class="icon-btn" id="accountClose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="account-modal-body">
+      <div class="field">
+        <label>表示名</label>
+        <input type="text" id="myName" placeholder="例: たろう">
+      </div>
+      <div class="field">
+        <label>アイコン <span class="hint">(画像を選ぶか、絵文字を入力)</span></label>
+        <div class="avatar-picker-row">
+          <div class="avatar-edit">
+            <div class="avatar" id="myAvatarPreview"></div>
+            <input type="file" id="myAvatarFile" accept="image/*">
+          </div>
+          <input type="text" id="myAvatarEmoji" placeholder="絵文字（任意）" style="flex:1;padding:9px 12px;border-radius:8px;border:1px solid var(--border-2);background:var(--panel-2);outline:none;">
+        </div>
+      </div>
+      <button class="close-btn-full" id="saveMyAccount">保存する</button>
+    </div>
+  </div>
+</div>
+
+<!-- settings modal -->
+<div class="modal-overlay settings-overlay" id="settingsOverlay">
+  <div class="modal settings-modal" id="settingsModal">
+    <div class="modal-header">
+      <span>いいねの設定</span>
+      <button class="icon-btn" id="settingsClose" aria-label="設定を閉じる"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="settings-body">
+
+      <div class="setting-block">
+        <div class="setting-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          いいね通知
+        </div>
+        <p class="setting-desc">投稿にいいねが付いたとき、プッシュ通知でお知らせします</p>
+        <div class="data-actions" style="align-items:center;">
+          <button class="add-account-btn" id="notifyPermissionBtn">通知を許可する</button>
+          <span id="notifyPermissionStatus" style="font-size:13px;color:var(--muted-2);"></span>
+        </div>
+      </div>
+
+      <div class="setting-block">
+        <div class="setting-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          いいねの頻度
+        </div>
+        <p class="setting-desc">投稿するとどのくらいの確率でいいねが付くか</p>
+        <div class="setting-card">
+          <div class="number-row">
+            <input type="number" id="likeFrequency" min="0" max="100" step="1" />
+            <span class="unit">%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="setting-block">
+        <div class="setting-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+          最大いいね数
+        </div>
+        <p class="setting-desc">1件の投稿につく、いいねの上限</p>
+        <div class="setting-card">
+          <div class="number-row">
+            <input type="number" id="maxLikes" min="0" max="50" step="1" />
+            <span class="unit">件</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="setting-block">
+        <div class="setting-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          いいねが届くまでの間隔
+        </div>
+        <p class="setting-desc">投稿してから何秒後にいいねが付き始めるか(ばらつきの範囲)</p>
+        <div class="setting-card">
+          <div class="number-row">
+            <label>最短</label>
+            <input type="number" id="minDelay" min="1" max="600" step="1" />
+            <span class="unit">秒</span>
+          </div>
+          <div class="number-row">
+            <label>最長</label>
+            <input type="number" id="maxDelay" min="1" max="1200" step="1" />
+            <span class="unit">秒</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="setting-block">
+        <div class="setting-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          いいねしてくれるアカウント
+        </div>
+        <p class="setting-desc">チェックしたアカウントだけがいいねします。名前とアイコンを自由に編集できます</p>
+        <div id="accountsList"></div>
+        <button class="add-account-btn" id="addAccountBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          アカウントを追加
+        </button>
+      </div>
+
+      <div class="setting-block">
+        <div class="setting-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          データの引き継ぎ
+        </div>
+        <p class="setting-desc">投稿・アカウント設定をファイルに書き出したり、他の端末で読み込んだりできます</p>
+        <div class="data-actions">
+          <button class="add-account-btn" id="exportDataBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            エクスポート
+          </button>
+          <button class="add-account-btn" id="importDataBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            インポート
+          </button>
+          <input type="file" id="importDataFile" accept="application/json,.json" hidden />
+        </div>
+      </div>
+
+    </div>
+    <div class="settings-footer">
+      <button class="close-btn-full" id="settingsCloseFull">閉じる</button>
+    </div>
+  </div>
+</div>
+
+<!-- install instructions modal -->
+<div class="modal-overlay" id="installOverlay">
+  <div class="modal" id="installModal" style="max-width:420px;">
+    <div class="modal-header">
+      <span id="installTitle">ホーム画面に追加</span>
+      <button class="icon-btn" id="installClose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="modal-body" style="padding:18px 20px 22px;">
+      <div id="installSteps"></div>
+    </div>
+  </div>
+</div>
+
+<!-- lightbox -->
+<div class="modal-overlay lightbox-overlay" id="lightboxOverlay">
+  <div class="lightbox-panel">
+    <button class="lightbox-close" id="lightboxClose" aria-label="閉じる">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="拡大画像" />
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var STORAGE_KEY_NOTES = "memosns-notes-v2";
+  var STORAGE_KEY_SETTINGS = "memosns-settings-v2";
+  var STORAGE_KEY_MYACCOUNT = "memosns-myaccount-v2";
+
+  // ---------- helpers ----------
+  var HUES = [350, 20, 45, 160, 190, 230, 265, 300];
+  function hashStr(s) {
+    var h = 0;
+    for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+    return h;
+  }
+  function avatarBg(name) {
+    var h = HUES[hashStr(name || "?") % HUES.length];
+    return "linear-gradient(135deg, hsl(" + h + " 70% 55%), hsl(" + ((h + 40) % 360) + " 70% 45%))";
+  }
+  function fmtTime(ts) {
+    var d = new Date(ts);
+    var hhmm = d.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" });
+    var ymd = d.toLocaleDateString("ja-JP", { year: "numeric", month: "short", day: "numeric" });
+    return ymd + " " + hhmm;
+  }
+  function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 8); }
+  function esc(str) {
+    var d = document.createElement("div");
+    d.textContent = str == null ? "" : str;
+    return d.innerHTML;
+  }
+  function escAttr(str) {
+    return esc(str).replace(/"/g, "&quot;");
+  }
+  // 本文中の #ハッシュタグ と URL をクリック可能な要素として描画する(それ以外は通常どおりエスケープ)
+  var NOTE_TOKEN_RE = /(https?:\/\/[^\s]+)|(#[^\s#]+)/g;
+  function renderNoteText(text) {
+    if (!text) return "";
+    var result = "";
+    var lastIndex = 0;
+    var m;
+    NOTE_TOKEN_RE.lastIndex = 0;
+    while ((m = NOTE_TOKEN_RE.exec(text)) !== null) {
+      result += esc(text.slice(lastIndex, m.index));
+      if (m[1]) {
+        // URL: 末尾の句読点や閉じ括弧はリンクに含めない
+        var url = m[1];
+        var trailing = "";
+        var tm = url.match(/[)\]},.!?、。」』]+$/);
+        if (tm) {
+          trailing = tm[0];
+          url = url.slice(0, url.length - trailing.length);
+        }
+        if (url) {
+          result += '<a class="note-link" href="' + escAttr(url) + '" target="_blank" rel="noopener noreferrer">' + esc(url) + "</a>";
+        }
+        result += esc(trailing);
+      } else if (m[2]) {
+        var tag = m[2];
+        result += '<span class="hashtag" data-tag="' + escAttr(tag) + '">' + esc(tag) + "</span>";
+      }
+      lastIndex = NOTE_TOKEN_RE.lastIndex;
+    }
+    result += esc(text.slice(lastIndex));
+    return result;
+  }
+  // 画像を指定した最大辺以内にリサイズしつつJPEGに変換してデータURLで返す(localStorage節約用)
+  function compressImageToDataUrl(file, maxSide, quality) {
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onerror = function () { reject(new Error("read error")); };
+      reader.onload = function () {
+        var img = new Image();
+        img.onerror = function () { reject(new Error("image error")); };
+        img.onload = function () {
+          var scale = Math.min(1, maxSide / Math.max(img.width, img.height));
+          var w = Math.max(1, Math.round(img.width * scale));
+          var h = Math.max(1, Math.round(img.height * scale));
+          var canvas = document.createElement("canvas");
+          canvas.width = w; canvas.height = h;
+          var ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, w, h);
+          try {
+            resolve(canvas.toDataURL("image/jpeg", quality));
+          } catch (e) {
+            resolve(reader.result);
+          }
+        };
+        img.src = reader.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+  // avatarのHTMLを作る: 画像/絵文字があればそれを、なければ色付きイニシャル
+  function avatarInnerHtml(acc) {
+    if (acc.avatar && acc.avatar.indexOf("data:image") === 0) {
+      return { html: '<img src="' + acc.avatar + '">', bg: "transparent" };
+    }
+    if (acc.avatar) {
+      return { html: esc(acc.avatar), bg: avatarBg(acc.name) };
+    }
+    return { html: esc((acc.name || "?")[0]), bg: avatarBg(acc.name) };
+  }
+  function applyAvatar(el, acc) {
+    var a = avatarInnerHtml(acc);
+    el.innerHTML = a.html;
+    el.style.background = a.bg;
+  }
+
+  var HEART_SVG_OUTLINE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+  var HEART_SVG_FILLED = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+  var BOOKMARK_SVG_OUTLINE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>';
+  var BOOKMARK_SVG_FILLED = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>';
+  var HEART_SVG_SMALL = '<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+  var REPLY_SVG = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>';
+
+  var DEFAULT_ACCOUNTS = [
+    { id: "a1", name: "さくら", avatar: "", checked: true },
+    { id: "a2", name: "ゆうと", avatar: "", checked: true },
+    { id: "a3", name: "ラーメン太郎", avatar: "", checked: true },
+    { id: "a4", name: "にゃんこ先生", avatar: "", checked: true },
+    { id: "a5", name: "夜更かし部長", avatar: "", checked: true },
+    { id: "a6", name: "コーヒー係", avatar: "", checked: true }
+  ];
+  var DEFAULT_SETTINGS = {
+    frequency: 70,
+    maxLikes: 6,
+    minDelaySec: 2,
+    maxDelaySec: 10,
+    accounts: DEFAULT_ACCOUNTS
+  };
+  var DEFAULT_MYACCOUNT = { name: "自分", avatar: "" };
+
+  // ---------- state ----------
+  var notes = [];
+  var settings = JSON.parse(JSON.stringify(DEFAULT_SETTINGS));
+  var myAccount = JSON.parse(JSON.stringify(DEFAULT_MYACCOUNT));
+  var query = "";
+  var dateFilter = ""; // YYYY-MM-DD 形式。指定日のみ表示する
+  var showBookmarksOnly = false;
+  var pendingTimeouts = [];
+  var openReplyBoxes = new Set(); // 返信入力欄を開いている投稿idの集合
+  var replyDrafts = {}; // 返信の入力途中テキストを再描画後も保持するため
+  var draftImages = []; // 投稿欄に添付中の画像(データURLの配列、最大4枚)
+  var MAX_DRAFT_IMAGES = 4;
+
+  function storageAvailable() {
+    try {
+      var t = "__memo_test__";
+      window.localStorage.setItem(t, t);
+      window.localStorage.removeItem(t);
+      return true;
+    } catch (e) { return false; }
+  }
+  var hasLocalStorage = storageAvailable();
+  var hasIndexedDB = !!window.indexedDB;
+
+  // ---------- storage (IndexedDB) ----------
+  // localStorageは容量が5MB程度しかなく画像添付ですぐ埋まるため、
+  // 本体データはIndexedDB(数百MB〜端末の空き容量まで使える)に保存する。
+  var DB_NAME = "memosns-db";
+  var DB_VERSION = 1;
+  var STORE_NAME = "kv";
+  var dbPromise = null;
+  function openDb() {
+    if (dbPromise) return dbPromise;
+    dbPromise = new Promise(function (resolve, reject) {
+      var req = indexedDB.open(DB_NAME, DB_VERSION);
+      req.onupgradeneeded = function () {
+        var db = req.result;
+        if (!db.objectStoreNames.contains(STORE_NAME)) db.createObjectStore(STORE_NAME);
+      };
+      req.onsuccess = function () { resolve(req.result); };
+      req.onerror = function () { reject(req.error || new Error("indexeddb open error")); };
+    });
+    return dbPromise;
+  }
+  function idbGet(key) {
+    return openDb().then(function (db) {
+      return new Promise(function (resolve, reject) {
+        var tx = db.transaction(STORE_NAME, "readonly");
+        var req = tx.objectStore(STORE_NAME).get(key);
+        req.onsuccess = function () { resolve(req.result); };
+        req.onerror = function () { reject(req.error); };
+      });
+    });
+  }
+  function idbSet(key, value) {
+    return openDb().then(function (db) {
+      return new Promise(function (resolve, reject) {
+        var tx = db.transaction(STORE_NAME, "readwrite");
+        var req = tx.objectStore(STORE_NAME).put(value, key);
+        req.onsuccess = function () { resolve(); };
+        req.onerror = function () { reject(req.error); };
+      });
+    });
+  }
+  // IndexedDBに該当データが無い場合、旧バージョン(localStorage)のデータを一度だけ引き継ぐ
+  function migrateOneFromLocalStorage(key) {
+    if (!hasLocalStorage) return undefined;
+    try {
+      var raw = window.localStorage.getItem(key);
+      if (raw) return JSON.parse(raw);
+    } catch (e) {}
+    return undefined;
+  }
+  function clearLegacyLocalStorage() {
+    if (!hasLocalStorage) return;
+    try {
+      window.localStorage.removeItem(STORAGE_KEY_NOTES);
+      window.localStorage.removeItem(STORAGE_KEY_SETTINGS);
+      window.localStorage.removeItem(STORAGE_KEY_MYACCOUNT);
+    } catch (e) {}
+  }
+  function applyLoadedState(n, s, m) {
+    if (n) notes = n;
+    if (s) settings = Object.assign({}, DEFAULT_SETTINGS, s);
+    if (m) myAccount = Object.assign({}, DEFAULT_MYACCOUNT, m);
+    applyAvatar(el.composeAvatar, myAccount);
+    renderFeed();
+    renderSettingsForm();
+  }
+  function loadFromLocalStorageOnly() {
+    applyLoadedState(
+      migrateOneFromLocalStorage(STORAGE_KEY_NOTES),
+      migrateOneFromLocalStorage(STORAGE_KEY_SETTINGS),
+      migrateOneFromLocalStorage(STORAGE_KEY_MYACCOUNT)
+    );
+  }
+
+  function loadState() {
+    if (!hasIndexedDB) { loadFromLocalStorageOnly(); return; }
+    Promise.all([
+      idbGet(STORAGE_KEY_NOTES),
+      idbGet(STORAGE_KEY_SETTINGS),
+      idbGet(STORAGE_KEY_MYACCOUNT)
+    ]).catch(function () {
+      return [undefined, undefined, undefined];
+    }).then(function (results) {
+      var n = results[0], s = results[1], m = results[2];
+      var migrations = [];
+      if (n === undefined) { n = migrateOneFromLocalStorage(STORAGE_KEY_NOTES); if (n) migrations.push(idbSet(STORAGE_KEY_NOTES, n)); }
+      if (s === undefined) { s = migrateOneFromLocalStorage(STORAGE_KEY_SETTINGS); if (s) migrations.push(idbSet(STORAGE_KEY_SETTINGS, s)); }
+      if (m === undefined) { m = migrateOneFromLocalStorage(STORAGE_KEY_MYACCOUNT); if (m) migrations.push(idbSet(STORAGE_KEY_MYACCOUNT, m)); }
+
+      applyLoadedState(n, s, m);
+
+      return Promise.all(migrations).then(clearLegacyLocalStorage);
+    }).catch(function () {
+      // IndexedDBが完全に使えない環境向けフォールバック
+      loadFromLocalStorageOnly();
+    });
+  }
+  function handleStorageError(e) {
+    if (e && (e.name === "QuotaExceededError" || e.code === 22 || e.code === 1014)) {
+      pushToast("保存容量の上限に達しました。画像を減らすか削除してください");
+    } else {
+      pushToast("保存に失敗しました");
+    }
+  }
+  function saveNotes() {
+    if (hasIndexedDB) { idbSet(STORAGE_KEY_NOTES, notes).catch(handleStorageError); return; }
+    if (!hasLocalStorage) return;
+    try { window.localStorage.setItem(STORAGE_KEY_NOTES, JSON.stringify(notes)); } catch (e) { handleStorageError(e); }
+  }
+  function saveSettings() {
+    if (hasIndexedDB) { idbSet(STORAGE_KEY_SETTINGS, settings).catch(handleStorageError); return; }
+    if (!hasLocalStorage) return;
+    try { window.localStorage.setItem(STORAGE_KEY_SETTINGS, JSON.stringify(settings)); } catch (e) { handleStorageError(e); }
+  }
+  function saveMyAccount() {
+    if (hasIndexedDB) { idbSet(STORAGE_KEY_MYACCOUNT, myAccount).catch(handleStorageError); return; }
+    if (!hasLocalStorage) return;
+    try { window.localStorage.setItem(STORAGE_KEY_MYACCOUNT, JSON.stringify(myAccount)); } catch (e) { handleStorageError(e); }
+  }
+
+  // ---------- dom refs ----------
+  var el = {
+    searchToggle: document.getElementById("searchToggle"),
+    menuToggle: document.getElementById("menuToggle"),
+    menuDropdown: document.getElementById("menuDropdown"),
+    accountToggle: document.getElementById("accountToggle"),
+    settingsToggle: document.getElementById("settingsToggle"),
+    searchBarWrap: document.getElementById("searchBarWrap"),
+    searchInput: document.getElementById("searchInput"),
+    clearSearch: document.getElementById("clearSearch"),
+    dateFilterToggle: document.getElementById("dateFilterToggle"),
+    dateFilterBarWrap: document.getElementById("dateFilterBarWrap"),
+    dateFilterInput: document.getElementById("dateFilterInput"),
+    clearDateFilter: document.getElementById("clearDateFilter"),
+    bookmarkFilterToggle: document.getElementById("bookmarkFilterToggle"),
+    composeArea: document.getElementById("composeArea"),
+    composeAvatar: document.getElementById("composeAvatar"),
+    draftInput: document.getElementById("draftInput"),
+    charCount: document.getElementById("charCount"),
+    postBtn: document.getElementById("postBtn"),
+    draftImageBtn: document.getElementById("draftImageBtn"),
+    draftImageFile: document.getElementById("draftImageFile"),
+    composePreviewGrid: document.getElementById("composePreviewGrid"),
+    feed: document.getElementById("feed"),
+    toastContainer: document.getElementById("toastContainer"),
+    likersOverlay: document.getElementById("likersOverlay"),
+    likersClose: document.getElementById("likersClose"),
+    likersBody: document.getElementById("likersBody"),
+    postGalleryToggle: document.getElementById("postGalleryToggle"),
+    galleryOverlay: document.getElementById("galleryOverlay"),
+    galleryClose: document.getElementById("galleryClose"),
+    galleryGrid: document.getElementById("galleryGrid"),
+    accountOverlay: document.getElementById("accountOverlay"),
+    accountClose: document.getElementById("accountClose"),
+    myName: document.getElementById("myName"),
+    myAvatarPreview: document.getElementById("myAvatarPreview"),
+    myAvatarFile: document.getElementById("myAvatarFile"),
+    myAvatarEmoji: document.getElementById("myAvatarEmoji"),
+    saveMyAccount: document.getElementById("saveMyAccount"),
+    settingsOverlay: document.getElementById("settingsOverlay"),
+    notifyPermissionBtn: document.getElementById("notifyPermissionBtn"),
+    notifyPermissionStatus: document.getElementById("notifyPermissionStatus"),
+    exportDataBtn: document.getElementById("exportDataBtn"),
+    importDataBtn: document.getElementById("importDataBtn"),
+    importDataFile: document.getElementById("importDataFile"),
+    settingsClose: document.getElementById("settingsClose"),
+    settingsCloseFull: document.getElementById("settingsCloseFull"),
+    likeFrequency: document.getElementById("likeFrequency"),
+    minDelay: document.getElementById("minDelay"),
+    maxDelay: document.getElementById("maxDelay"),
+    maxLikes: document.getElementById("maxLikes"),
+    accountsList: document.getElementById("accountsList"),
+    addAccountBtn: document.getElementById("addAccountBtn"),
+    installBtn: document.getElementById("installBtn"),
+    installOverlay: document.getElementById("installOverlay"),
+    installClose: document.getElementById("installClose"),
+    installTitle: document.getElementById("installTitle"),
+    installSteps: document.getElementById("installSteps"),
+    lightboxOverlay: document.getElementById("lightboxOverlay"),
+    lightboxClose: document.getElementById("lightboxClose"),
+    lightboxImg: document.getElementById("lightboxImg")
+  };
+
+  // ---------- lightbox ----------
+  function openLightbox(src) {
+    el.lightboxImg.src = src;
+    el.lightboxOverlay.classList.add("open");
+  }
+  function closeLightbox() {
+    el.lightboxOverlay.classList.remove("open");
+    el.lightboxImg.src = "";
+  }
+  el.lightboxClose.addEventListener("click", closeLightbox);
+  el.lightboxOverlay.addEventListener("click", function (e) { if (e.target === el.lightboxOverlay) closeLightbox(); });
+
+  // ---------- 投稿写真ギャラリー ----------
+  function collectPostImages() {
+    var imgs = [];
+    notes.forEach(function (n) {
+      var arr = n.images && n.images.length ? n.images : (n.image ? [n.image] : []);
+      arr.forEach(function (src) { imgs.push(src); });
+    });
+    return imgs;
+  }
+  function openGallery() {
+    var imgs = collectPostImages();
+    var existingEmpty = document.getElementById("galleryEmptyMsg");
+    if (existingEmpty) existingEmpty.remove();
+    if (imgs.length === 0) {
+      el.galleryGrid.style.display = "none";
+      el.galleryGrid.innerHTML = "";
+      el.galleryBody.insertAdjacentHTML("beforeend", '<div class="gallery-empty" id="galleryEmptyMsg">投稿した写真はまだありません。</div>');
+    } else {
+      el.galleryGrid.style.display = "grid";
+      el.galleryGrid.innerHTML = imgs.map(function (src) {
+        return '<img src="' + src + '" alt="投稿した写真" loading="lazy" data-lightbox-src="' + escAttr(src) + '" />';
+      }).join("");
+      Array.prototype.forEach.call(el.galleryGrid.querySelectorAll("[data-lightbox-src]"), function (img) {
+        img.addEventListener("click", function () { openLightbox(img.getAttribute("data-lightbox-src")); });
+      });
+    }
+    el.galleryOverlay.classList.add("open");
+  }
+  function closeGallery() { el.galleryOverlay.classList.remove("open"); }
+  el.postGalleryToggle.addEventListener("click", openGallery);
+  el.galleryClose.addEventListener("click", closeGallery);
+  el.galleryOverlay.addEventListener("click", function (e) { if (e.target === el.galleryOverlay) closeGallery(); });
+
+  // ---------- toasts ----------
+  function pushToast(text) {
+    var t = document.createElement("div");
+    t.className = "toast";
+    t.innerHTML = '<span style="color:var(--like); display:flex;">' + HEART_SVG_SMALL + "</span>" + esc(text);
+    el.toastContainer.appendChild(t);
+    var to = setTimeout(function () { t.remove(); }, 3200);
+    pendingTimeouts.push(to);
+  }
+
+  // ---------- browser notifications ----------
+  // Android版Chromeなど、PWAとしてインストールした状態では
+  // 直接 new Notification() を呼ぶと "Illegal constructor" になり通知が出せないため、
+  // Service Worker経由の registration.showNotification() を優先的に使う。
+  var swRegistration = null;
+  if ("serviceWorker" in navigator && window.isSecureContext) {
+    navigator.serviceWorker.register(new URL("sw.js", document.baseURI).toString())
+      .then(function (reg) { swRegistration = reg; })
+      .catch(function () { swRegistration = null; });
+  }
+  function ensureNotificationPermission() {
+    if (!("Notification" in window)) return;
+    if (Notification.permission === "default") {
+      Notification.requestPermission().then(updateNotifyPermissionUi).catch(function () {});
+    }
+  }
+  function pushNotification(title, body) {
+    if (!("Notification" in window)) return;
+    if (Notification.permission !== "granted") return;
+    // tagを固定にすると新しい通知が古い通知を上書きして消してしまうため、毎回ユニークな値にする
+    var opts = { body: body, tag: "memosns-like-" + Date.now() + "-" + Math.random().toString(36).slice(2) };
+    if (swRegistration) {
+      swRegistration.showNotification(title, opts).catch(function () {
+        try { new Notification(title, opts); } catch (e) {}
+      });
+      return;
+    }
+    if (navigator.serviceWorker && navigator.serviceWorker.ready) {
+      navigator.serviceWorker.ready.then(function (reg) {
+        return reg.showNotification(title, opts);
+      }).catch(function () {
+        try { new Notification(title, opts); } catch (e) {}
+      });
+      return;
+    }
+    try { new Notification(title, opts); } catch (e) {}
+  }
+  function updateNotifyPermissionUi() {
+    if (!el.notifyPermissionStatus) return;
+    if (!("Notification" in window)) {
+      el.notifyPermissionStatus.textContent = "この端末では通知に対応していません";
+      el.notifyPermissionBtn.style.display = "none";
+      return;
+    }
+    if (Notification.permission === "granted") {
+      el.notifyPermissionStatus.textContent = "許可済み";
+      el.notifyPermissionBtn.style.display = "none";
+    } else if (Notification.permission === "denied") {
+      el.notifyPermissionStatus.textContent = "ブロックされています(端末の通知設定から変更してください)";
+      el.notifyPermissionBtn.style.display = "none";
+    } else {
+      el.notifyPermissionStatus.textContent = "未設定";
+      el.notifyPermissionBtn.style.display = "inline-flex";
+    }
+  }
+  if (el.notifyPermissionBtn) {
+    el.notifyPermissionBtn.addEventListener("click", function () {
+      if (!("Notification" in window)) return;
+      Notification.requestPermission().then(function (perm) {
+        updateNotifyPermissionUi();
+        if (perm === "granted") {
+          pushToast("いいね通知を有効にしました");
+          pushNotification("通知を有効にしました", "いいねが付くとお知らせします");
+        }
+      }).catch(function () {});
+    });
+  }
+  updateNotifyPermissionUi();
+
+  // ---------- like scheduling ----------
+  function scheduleLikes(noteId) {
+    var pool = settings.accounts.filter(function (a) { return a.checked; });
+    if (!pool.length || settings.maxLikes <= 0) return;
+    var chance = settings.frequency / 100;
+
+    var willLike = [];
+    pool.forEach(function (acc) {
+      if (Math.random() < chance) willLike.push(acc);
+    });
+    if (willLike.length === 0) return;
+
+    var shuffled = willLike.slice().sort(function () { return Math.random() - 0.5; }).slice(0, settings.maxLikes);
+    var cumulative = 0;
+    shuffled.forEach(function (acc) {
+      var min = Math.max(1, settings.minDelaySec);
+      var max = Math.max(min, settings.maxDelaySec);
+      cumulative += min + Math.random() * (max - min);
+      var to = setTimeout(function () {
+        var note = notes.find(function (n) { return n.id === noteId; });
+        if (!note) return;
+        note.likes.push({ accId: acc.id, name: acc.name, avatar: acc.avatar, at: Date.now() });
+        saveNotes();
+        renderFeed();
+        pushToast(acc.name + " さんがいいねしました");
+        pushNotification(acc.name + " さんがいいねしました", note.text.slice(0, 60));
+      }, cumulative * 1000);
+      pendingTimeouts.push(to);
+    });
+  }
+
+  // ---------- compose ----------
+  function updatePostBtnState() {
+    var hasText = el.draftInput.value.trim().length > 0;
+    el.postBtn.disabled = !hasText && draftImages.length === 0;
+  }
+  el.draftInput.addEventListener("input", function () {
+    el.charCount.textContent = el.draftInput.value.length;
+    updatePostBtnState();
+  });
+
+  // 画像を最大幅1080pxにリサイズしつつJPEGに変換してデータURLで返す
+  function readImageAsDataURL(file) {
+    return compressImageToDataUrl(file, 1080, 0.82);
+  }
+
+  function renderComposePreviewGrid() {
+    if (draftImages.length === 0) {
+      el.composePreviewGrid.style.display = "none";
+      el.composePreviewGrid.innerHTML = "";
+      return;
+    }
+    el.composePreviewGrid.style.display = "grid";
+    el.composePreviewGrid.innerHTML = draftImages.map(function (src, i) {
+      return (
+        '<div class="compose-preview-item">' +
+          '<img src="' + src + '" alt="添付画像プレビュー" data-preview-index="' + i + '" />' +
+          '<button class="remove-preview-btn" data-remove-index="' + i + '" aria-label="画像を削除">' +
+            '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>' +
+          "</button>" +
+        "</div>"
+      );
+    }).join("");
+    Array.prototype.forEach.call(el.composePreviewGrid.querySelectorAll("[data-remove-index]"), function (btn) {
+      btn.addEventListener("click", function () {
+        var i = Number(btn.getAttribute("data-remove-index"));
+        draftImages.splice(i, 1);
+        renderComposePreviewGrid();
+        updatePostBtnState();
+      });
+    });
+    Array.prototype.forEach.call(el.composePreviewGrid.querySelectorAll("[data-preview-index]"), function (img) {
+      img.addEventListener("click", function () { openLightbox(img.getAttribute("src")); });
+    });
+  }
+
+  el.draftImageBtn.addEventListener("click", function () {
+    if (draftImages.length >= MAX_DRAFT_IMAGES) {
+      pushToast("写真は最大" + MAX_DRAFT_IMAGES + "枚までです");
+      return;
+    }
+    el.draftImageFile.click();
+  });
+  el.draftImageFile.addEventListener("change", function () {
+    var files = Array.prototype.slice.call(el.draftImageFile.files || []);
+    el.draftImageFile.value = "";
+    files = files.filter(function (f) { return f.type.indexOf("image/") === 0; });
+    if (files.length === 0) return;
+    var room = MAX_DRAFT_IMAGES - draftImages.length;
+    if (room <= 0) {
+      pushToast("写真は最大" + MAX_DRAFT_IMAGES + "枚までです");
+      return;
+    }
+    if (files.length > room) {
+      pushToast("写真は最大" + MAX_DRAFT_IMAGES + "枚までのため、先頭" + room + "枚のみ追加します");
+      files = files.slice(0, room);
+    }
+    Promise.all(files.map(function (f) { return readImageAsDataURL(f); }))
+      .then(function (dataUrls) {
+        draftImages = draftImages.concat(dataUrls);
+        renderComposePreviewGrid();
+        updatePostBtnState();
+      })
+      .catch(function () {
+        pushToast("画像の読み込みに失敗しました");
+      });
+  });
+
+  el.postBtn.addEventListener("click", function () {
+    var text = el.draftInput.value.trim();
+    if (!text && draftImages.length === 0) return;
+    ensureNotificationPermission();
+    var note = { id: uid(), text: text, images: draftImages.slice(), createdAt: Date.now(), likes: [], replies: [], bookmarked: false };
+    notes.unshift(note);
+    saveNotes();
+    el.draftInput.value = "";
+    el.charCount.textContent = "0";
+    draftImages = [];
+    renderComposePreviewGrid();
+    el.postBtn.disabled = true;
+    renderFeed();
+    scheduleLikes(note.id);
+  });
+
+  // ---------- header menu ----------
+  el.menuToggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+    el.menuDropdown.classList.toggle("open");
+  });
+  el.menuDropdown.addEventListener("click", function () {
+    el.menuDropdown.classList.remove("open");
+  });
+  document.addEventListener("click", function (e) {
+    if (!el.menuDropdown.classList.contains("open")) return;
+    if (el.menuToggle.contains(e.target) || el.menuDropdown.contains(e.target)) return;
+    el.menuDropdown.classList.remove("open");
+  });
+
+  // ---------- search ----------
+  function syncComposeVisibility() {
+    var anyOpen = el.searchBarWrap.classList.contains("open") || el.dateFilterBarWrap.classList.contains("open");
+    el.composeArea.classList.toggle("hidden", anyOpen);
+  }
+  el.searchToggle.addEventListener("click", function () {
+    var open = el.searchBarWrap.classList.toggle("open");
+    el.searchToggle.classList.toggle("active", open);
+    syncComposeVisibility();
+    if (open) el.searchInput.focus();
+    else {
+      query = "";
+      el.searchInput.value = "";
+      el.clearSearch.style.display = "none";
+      renderFeed();
+    }
+  });
+  el.searchInput.addEventListener("input", function () {
+    query = el.searchInput.value;
+    el.clearSearch.style.display = query ? "flex" : "none";
+    renderFeed();
+  });
+  el.clearSearch.addEventListener("click", function () {
+    query = "";
+    el.searchInput.value = "";
+    el.clearSearch.style.display = "none";
+    el.searchInput.focus();
+    renderFeed();
+  });
+
+  // ---------- 日付での絞り込み ----------
+  function pad2(n) { return String(n).padStart(2, "0"); }
+  function localDateStr(ts) {
+    var d = new Date(ts);
+    return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
+  }
+  el.dateFilterToggle.addEventListener("click", function () {
+    var open = el.dateFilterBarWrap.classList.toggle("open");
+    el.dateFilterToggle.classList.toggle("active", open);
+    syncComposeVisibility();
+    if (!open) {
+      dateFilter = "";
+      el.dateFilterInput.value = "";
+      el.clearDateFilter.style.display = "none";
+      renderFeed();
+    }
+  });
+  el.dateFilterInput.addEventListener("change", function () {
+    dateFilter = el.dateFilterInput.value;
+    el.clearDateFilter.style.display = dateFilter ? "flex" : "none";
+    renderFeed();
+  });
+  el.clearDateFilter.addEventListener("click", function () {
+    dateFilter = "";
+    el.dateFilterInput.value = "";
+    el.clearDateFilter.style.display = "none";
+    renderFeed();
+  });
+
+  // ---------- ブックマークのみ表示 ----------
+  el.bookmarkFilterToggle.addEventListener("click", function () {
+    showBookmarksOnly = !showBookmarksOnly;
+    el.bookmarkFilterToggle.classList.toggle("active", showBookmarksOnly);
+    renderFeed();
+  });
+
+  // ---------- feed rendering ----------
+  function renderFeed() {
+    var q = query.trim().toLowerCase();
+    var filtered = notes;
+    if (q) filtered = filtered.filter(function (n) { return n.text.toLowerCase().indexOf(q) !== -1; });
+    if (dateFilter) filtered = filtered.filter(function (n) { return localDateStr(n.createdAt) === dateFilter; });
+    if (showBookmarksOnly) filtered = filtered.filter(function (n) { return !!n.bookmarked; });
+
+    if (filtered.length === 0) {
+      var msg = "まだメモがありません。最初の一件を投稿してみましょう。";
+      if (notes.length > 0) {
+        msg = showBookmarksOnly ? "ブックマークしたメモはまだありません。"
+          : dateFilter && q ? "その日付・条件に一致するメモが見つかりませんでした。"
+          : dateFilter ? "その日の投稿はありません。"
+          : "一致するメモが見つかりませんでした。";
+      }
+      el.feed.innerHTML = '<div class="empty-state">' + msg + "</div>";
+      return;
+    }
+
+    el.feed.innerHTML = filtered.map(function (note) {
+      var likeCount = note.likes.length;
+      var shown = note.likes.slice(0, 3);
+      var myAv = avatarInnerHtml(myAccount);
+      var images = note.images && note.images.length ? note.images : (note.image ? [note.image] : []);
+
+      var mediaHtml = "";
+      if (images.length === 1) {
+        mediaHtml = '<div class="note-media"><img src="' + images[0] + '" alt="添付画像" loading="lazy" data-lightbox-src="' + escAttr(images[0]) + '" /></div>';
+      } else if (images.length > 1) {
+        mediaHtml = '<div class="note-media-grid">' +
+          images.map(function (src) {
+            return '<img src="' + src + '" alt="添付画像" loading="lazy" data-lightbox-src="' + escAttr(src) + '" />';
+          }).join("") +
+          "</div>";
+      }
+
+      var avatarsHtml = "";
+      if (shown.length > 0) {
+        avatarsHtml = '<div class="liker-avatars">' +
+          shown.map(function (l) {
+            var a = avatarInnerHtml(l);
+            return '<div class="mini-avatar" style="background:' + a.bg + '" title="' + esc(l.name) + '">' + a.html + "</div>";
+          }).join("") +
+          (likeCount > 3 ? '<div class="mini-avatar more">+' + (likeCount - 3) + "</div>" : "") +
+          "</div>";
+      }
+
+      var repliesHtml = "";
+      if (note.replies && note.replies.length > 0) {
+        repliesHtml = '<div class="replies-list">' +
+          note.replies.map(function (r) {
+            return (
+              '<div class="reply-item">' +
+                '<div class="avatar" style="background:' + myAv.bg + '">' + myAv.html + "</div>" +
+                '<div class="reply-body">' +
+                  '<div class="note-meta"><span class="name">' + esc(myAccount.name) + '</span><span class="dim">・' + fmtTime(r.createdAt) + "</span></div>" +
+                  '<p class="note-text">' + renderNoteText(r.text) + "</p>" +
+                "</div>" +
+              "</div>"
+            );
+          }).join("") +
+          "</div>";
+      }
+      var replyCount = note.replies ? note.replies.length : 0;
+      var replyComposeHtml = "";
+      if (openReplyBoxes.has(note.id)) {
+        replyComposeHtml =
+          '<div class="reply-compose">' +
+            '<textarea class="reply-input" rows="1" placeholder="返信を追加…" data-reply-input="' + note.id + '">' + esc(replyDrafts[note.id] || "") + "</textarea>" +
+            '<button class="reply-send-btn" data-reply-send="' + note.id + '">送信</button>' +
+          "</div>";
+      }
+
+      return (
+        '<div class="note">' +
+          '<div class="avatar" style="background:' + myAv.bg + '">' + myAv.html + "</div>" +
+          '<div class="note-body">' +
+            '<div class="note-meta"><span class="name">' + esc(myAccount.name) + '</span><span class="dim">・' + fmtTime(note.createdAt) + "</span></div>" +
+            (note.text ? '<p class="note-text">' + renderNoteText(note.text) + "</p>" : "") +
+            mediaHtml +
+            '<div class="note-actions">' +
+              '<span class="heart-wrap">' + (likeCount ? HEART_SVG_FILLED : HEART_SVG_OUTLINE) + "</span>" +
+              '<button class="like-count-btn" ' + (likeCount ? 'data-note-id="' + note.id + '"' : "disabled") + ">" + likeCount + "</button>" +
+              avatarsHtml +
+              '<button class="reply-btn" data-reply-toggle="' + note.id + '">' + REPLY_SVG + (replyCount ? " " + replyCount : "") + "</button>" +
+              '<button class="bookmark-btn' + (note.bookmarked ? " active" : "") + '" data-bookmark-id="' + note.id + '" aria-label="ブックマーク">' + (note.bookmarked ? BOOKMARK_SVG_FILLED : BOOKMARK_SVG_OUTLINE) + "</button>" +
+              '<button class="del-note-btn" data-del-id="' + note.id + '">削除</button>' +
+            "</div>" +
+            repliesHtml +
+            replyComposeHtml +
+          "</div>" +
+        "</div>"
+      );
+    }).join("");
+
+    Array.prototype.forEach.call(el.feed.querySelectorAll(".like-count-btn[data-note-id]"), function (btn) {
+      btn.addEventListener("click", function () { openLikers(btn.getAttribute("data-note-id")); });
+    });
+    Array.prototype.forEach.call(el.feed.querySelectorAll(".bookmark-btn[data-bookmark-id]"), function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-bookmark-id");
+        var n = notes.find(function (n) { return n.id === id; });
+        if (!n) return;
+        n.bookmarked = !n.bookmarked;
+        saveNotes();
+        renderFeed();
+      });
+    });
+    Array.prototype.forEach.call(el.feed.querySelectorAll(".del-note-btn"), function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-del-id");
+        notes = notes.filter(function (n) { return n.id !== id; });
+        saveNotes();
+        renderFeed();
+      });
+    });
+    Array.prototype.forEach.call(el.feed.querySelectorAll("[data-lightbox-src]"), function (img) {
+      img.addEventListener("click", function () { openLightbox(img.getAttribute("data-lightbox-src")); });
+    });
+    Array.prototype.forEach.call(el.feed.querySelectorAll(".hashtag[data-tag]"), function (span) {
+      span.addEventListener("click", function () { filterByTag(span.getAttribute("data-tag")); });
+    });
+    Array.prototype.forEach.call(el.feed.querySelectorAll("[data-reply-toggle]"), function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-reply-toggle");
+        if (openReplyBoxes.has(id)) openReplyBoxes.delete(id);
+        else openReplyBoxes.add(id);
+        renderFeed();
+        var ta = el.feed.querySelector('[data-reply-input="' + id + '"]');
+        if (ta) ta.focus();
+      });
+    });
+    Array.prototype.forEach.call(el.feed.querySelectorAll("[data-reply-input]"), function (ta) {
+      ta.addEventListener("input", function () {
+        replyDrafts[ta.getAttribute("data-reply-input")] = ta.value;
+      });
+    });
+    function sendReply(id) {
+      var text = (replyDrafts[id] || "").trim();
+      if (!text) return;
+      var note = notes.find(function (n) { return n.id === id; });
+      if (!note) return;
+      if (!note.replies) note.replies = [];
+      note.replies.push({ id: uid(), text: text, createdAt: Date.now() });
+      delete replyDrafts[id];
+      openReplyBoxes.delete(id);
+      saveNotes();
+      renderFeed();
+    }
+    Array.prototype.forEach.call(el.feed.querySelectorAll("[data-reply-send]"), function (btn) {
+      btn.addEventListener("click", function () { sendReply(btn.getAttribute("data-reply-send")); });
+    });
+    Array.prototype.forEach.call(el.feed.querySelectorAll("[data-reply-input]"), function (ta) {
+      ta.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" && !e.shiftKey) {
+          e.preventDefault();
+          sendReply(ta.getAttribute("data-reply-input"));
+        }
+      });
+    });
+  }
+
+  // ハッシュタグをタップしたら検索バーを開いて、そのタグで絞り込む
+  function filterByTag(tag) {
+    query = tag;
+    el.searchInput.value = tag;
+    el.searchBarWrap.classList.add("open");
+    el.searchToggle.classList.add("active");
+    el.composeArea.classList.add("hidden");
+    el.clearSearch.style.display = "flex";
+    renderFeed();
+  }
+
+  // ---------- likers modal ----------
+  function openLikers(noteId) {
+    var note = notes.find(function (n) { return n.id === noteId; });
+    if (!note) return;
+    el.likersBody.innerHTML = note.likes.slice().reverse().map(function (l) {
+      var a = avatarInnerHtml(l);
+      return (
+        '<div class="liker-row">' +
+          '<div class="mid-avatar" style="background:' + a.bg + '">' + a.html + "</div>" +
+          '<div class="liker-name">' + esc(l.name) + "</div>" +
+        "</div>"
+      );
+    }).join("");
+    el.likersOverlay.classList.add("open");
+  }
+  function closeLikers() { el.likersOverlay.classList.remove("open"); }
+  el.likersClose.addEventListener("click", closeLikers);
+  el.likersOverlay.addEventListener("click", function (e) { if (e.target === el.likersOverlay) closeLikers(); });
+
+  // ---------- my account modal ----------
+  var tempMyAvatar = "";
+  function openAccountModal() {
+    el.myName.value = myAccount.name;
+    tempMyAvatar = myAccount.avatar || "";
+    el.myAvatarEmoji.value = (tempMyAvatar && tempMyAvatar.indexOf("data:image") !== 0) ? tempMyAvatar : "";
+    applyAvatar(el.myAvatarPreview, { name: myAccount.name, avatar: tempMyAvatar });
+    el.accountOverlay.classList.add("open");
+  }
+  function closeAccountModal() { el.accountOverlay.classList.remove("open"); }
+  el.accountToggle.addEventListener("click", openAccountModal);
+  el.accountClose.addEventListener("click", closeAccountModal);
+  el.accountOverlay.addEventListener("click", function (e) { if (e.target === el.accountOverlay) closeAccountModal(); });
+
+  el.myAvatarEmoji.addEventListener("input", function () {
+    tempMyAvatar = el.myAvatarEmoji.value;
+    applyAvatar(el.myAvatarPreview, { name: el.myName.value, avatar: tempMyAvatar });
+  });
+  el.myAvatarFile.addEventListener("change", function () {
+    var file = el.myAvatarFile.files[0];
+    if (!file) return;
+    compressImageToDataUrl(file, 256, 0.85).then(function (dataUrl) {
+      tempMyAvatar = dataUrl;
+      el.myAvatarEmoji.value = "";
+      applyAvatar(el.myAvatarPreview, { name: el.myName.value, avatar: tempMyAvatar });
+    });
+  });
+  el.saveMyAccount.addEventListener("click", function () {
+    myAccount.name = el.myName.value.trim() || "自分";
+    myAccount.avatar = tempMyAvatar;
+    saveMyAccount();
+    applyAvatar(el.composeAvatar, myAccount);
+    renderFeed();
+    closeAccountModal();
+  });
+
+  // ---------- settings modal ----------
+  function openSettings() { renderSettingsForm(); updateNotifyPermissionUi(); el.settingsOverlay.classList.add("open"); }
+  function closeSettings() { el.settingsOverlay.classList.remove("open"); }
+  el.settingsToggle.addEventListener("click", openSettings);
+  el.settingsClose.addEventListener("click", closeSettings);
+  el.settingsCloseFull.addEventListener("click", closeSettings);
+  el.settingsOverlay.addEventListener("click", function (e) { if (e.target === el.settingsOverlay) closeSettings(); });
+
+  // ---------- データのエクスポート / インポート ----------
+  function exportData() {
+    var payload = {
+      app: "sns-memo",
+      version: 1,
+      exportedAt: Date.now(),
+      notes: notes,
+      settings: settings,
+      myAccount: myAccount
+    };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    var url = URL.createObjectURL(blob);
+    var d = new Date();
+    var pad = function (n) { return String(n).padStart(2, "0"); };
+    var stamp = d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) + "-" + pad(d.getHours()) + pad(d.getMinutes());
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "sns-memo-backup-" + stamp + ".json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+    pushToast("バックアップを書き出しました");
+  }
+  function importDataFromFile(file) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var data;
+      try {
+        data = JSON.parse(reader.result);
+      } catch (e) {
+        pushToast("ファイルの読み込みに失敗しました");
+        return;
+      }
+      if (!data || typeof data !== "object" || !Array.isArray(data.notes)) {
+        pushToast("バックアップファイルの形式が正しくありません");
+        return;
+      }
+      var ok = window.confirm("現在のデータを、選んだファイルの内容で上書きします。よろしいですか?");
+      if (!ok) return;
+      notes = data.notes || [];
+      settings = Object.assign({}, DEFAULT_SETTINGS, data.settings || {});
+      myAccount = Object.assign({}, DEFAULT_MYACCOUNT, data.myAccount || {});
+      saveNotes();
+      saveSettings();
+      saveMyAccount();
+      applyAvatar(el.composeAvatar, myAccount);
+      renderFeed();
+      renderSettingsForm();
+      pushToast("データを読み込みました");
+    };
+    reader.onerror = function () { pushToast("ファイルの読み込みに失敗しました"); };
+    reader.readAsText(file);
+  }
+  el.exportDataBtn.addEventListener("click", exportData);
+  el.importDataBtn.addEventListener("click", function () { el.importDataFile.click(); });
+  el.importDataFile.addEventListener("change", function () {
+    var file = el.importDataFile.files && el.importDataFile.files[0];
+    el.importDataFile.value = "";
+    if (!file) return;
+    importDataFromFile(file);
+  });
+
+  function renderSettingsForm() {
+    el.likeFrequency.value = settings.frequency;
+    el.maxLikes.value = settings.maxLikes;
+    el.minDelay.value = settings.minDelaySec;
+    el.maxDelay.value = settings.maxDelaySec;
+    renderAccountsList();
+  }
+
+  function clampNumber(v, min, max, fallback) {
+    if (isNaN(v)) return fallback;
+    return Math.min(max, Math.max(min, v));
+  }
+
+  el.likeFrequency.addEventListener("change", function () {
+    var v = clampNumber(Number(el.likeFrequency.value), 0, 100, settings.frequency);
+    settings.frequency = v;
+    el.likeFrequency.value = v;
+    saveSettings();
+  });
+  el.maxLikes.addEventListener("change", function () {
+    var v = clampNumber(Number(el.maxLikes.value), 0, 50, settings.maxLikes);
+    settings.maxLikes = v;
+    el.maxLikes.value = v;
+    saveSettings();
+  });
+  el.minDelay.addEventListener("change", function () {
+    var v = clampNumber(Number(el.minDelay.value), 1, 600, settings.minDelaySec);
+    settings.minDelaySec = v;
+    if (settings.maxDelaySec < v) {
+      settings.maxDelaySec = v;
+      el.maxDelay.value = v;
+    }
+    el.minDelay.value = v;
+    saveSettings();
+  });
+  el.maxDelay.addEventListener("change", function () {
+    var v = clampNumber(Number(el.maxDelay.value), 1, 1200, settings.maxDelaySec);
+    settings.maxDelaySec = v;
+    if (settings.minDelaySec > v) {
+      settings.minDelaySec = v;
+      el.minDelay.value = v;
+    }
+    el.maxDelay.value = v;
+    saveSettings();
+  });
+
+  function renderAccountsList() {
+    el.accountsList.innerHTML = settings.accounts.map(function (a) {
+      var av = avatarInnerHtml(a);
+      var emojiVal = (a.avatar && a.avatar.indexOf("data:image") !== 0) ? a.avatar : "";
+      return (
+        '<div class="account-row" data-id="' + a.id + '">' +
+          '<input type="checkbox" data-field="checked" ' + (a.checked ? "checked" : "") + ' title="いいねを許可" />' +
+          '<div class="avatar-edit">' +
+            '<div class="avatar" data-avatar-preview style="background:' + av.bg + '">' + av.html + "</div>" +
+            '<input type="file" accept="image/*" data-avatar-file />' +
+          "</div>" +
+          '<input class="emoji-input" type="text" value="' + esc(emojiVal) + '" placeholder="絵文字" data-field="emoji" />' +
+          '<input type="text" value="' + esc(a.name) + '" placeholder="表示名" data-field="name" />' +
+          '<button class="del-btn" aria-label="削除" data-remove><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg></button>' +
+        "</div>"
+      );
+    }).join("");
+
+    Array.prototype.forEach.call(el.accountsList.querySelectorAll(".account-row"), function (row) {
+      var id = row.getAttribute("data-id");
+      function getAcc() { return settings.accounts.find(function (a) { return a.id === id; }); }
+      var preview = row.querySelector("[data-avatar-preview]");
+
+      row.querySelector('[data-field="checked"]').addEventListener("change", function (e) {
+        var acc = getAcc(); if (!acc) return;
+        acc.checked = e.target.checked;
+        saveSettings();
+      });
+      row.querySelector('[data-field="name"]').addEventListener("input", function (e) {
+        var acc = getAcc(); if (!acc) return;
+        acc.name = e.target.value;
+        var av = avatarInnerHtml(acc);
+        preview.innerHTML = av.html; preview.style.background = av.bg;
+        saveSettings();
+        renderFeed();
+      });
+      row.querySelector('[data-field="emoji"]').addEventListener("input", function (e) {
+        var acc = getAcc(); if (!acc) return;
+        acc.avatar = e.target.value;
+        var av = avatarInnerHtml(acc);
+        preview.innerHTML = av.html; preview.style.background = av.bg;
+        saveSettings();
+        renderFeed();
+      });
+      row.querySelector("[data-avatar-file]").addEventListener("change", function (e) {
+        var file = e.target.files[0];
+        if (!file) return;
+        compressImageToDataUrl(file, 256, 0.85).then(function (dataUrl) {
+          var acc = getAcc(); if (!acc) return;
+          acc.avatar = dataUrl;
+          row.querySelector('[data-field="emoji"]').value = "";
+          var av = avatarInnerHtml(acc);
+          preview.innerHTML = av.html; preview.style.background = av.bg;
+          saveSettings();
+          renderFeed();
+        });
+      });
+      row.querySelector("[data-remove]").addEventListener("click", function () {
+        settings.accounts = settings.accounts.filter(function (a) { return a.id !== id; });
+        saveSettings();
+        renderAccountsList();
+      });
+    });
+  }
+
+  el.addAccountBtn.addEventListener("click", function () {
+    var emojiPool = ["😺","🐶","🦊","🐼","🐨","🦁","🐸","🐵","🦄","🌟","🍉","🍩","⚽","🎸","📚","🌈"];
+    settings.accounts.push({
+      id: uid(),
+      name: "新しいアカウント",
+      avatar: emojiPool[Math.floor(Math.random() * emojiPool.length)],
+      checked: true
+    });
+    saveSettings();
+    renderAccountsList();
+  });
+
+  // ---------- install / add to home screen ----------
+  var deferredInstallPrompt = null;
+
+  function isStandalone() {
+    return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+  }
+  function isIOS() {
+    var ua = window.navigator.userAgent || "";
+    var iOSDevice = /iPad|iPhone|iPod/.test(ua);
+    var iPadOS13Up = ua.indexOf("Macintosh") !== -1 && "ontouchend" in document;
+    return iOSDevice || iPadOS13Up;
+  }
+  function isAndroid() { return /Android/.test(window.navigator.userAgent || ""); }
+
+  function updateInstallBtnVisibility() {
+    el.installBtn.style.display = isStandalone() ? "none" : "flex";
+  }
+
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    updateInstallBtnVisibility();
+  });
+  window.addEventListener("appinstalled", function () {
+    deferredInstallPrompt = null;
+    el.installBtn.style.display = "none";
+  });
+
+  function showInstallInstructions() {
+    var stepsHtml = "";
+    if (isIOS()) {
+      el.installTitle.textContent = "ホーム画面に追加(iPhone/iPad)";
+      stepsHtml =
+        '<div class="install-step">① 画面下(または上)の <strong>共有ボタン</strong> をタップ</div>' +
+        '<div class="install-step">② メニューを下にスクロールして <strong>「ホーム画面に追加」</strong> を選択</div>' +
+        '<div class="install-step">③ 右上の <strong>「追加」</strong> をタップすれば完了です</div>';
+    } else if (isAndroid()) {
+      el.installTitle.textContent = "ホーム画面に追加(Android)";
+      stepsHtml =
+        '<div class="install-step">① 右上の <strong>⋮ メニュー</strong> をタップ</div>' +
+        '<div class="install-step">② <strong>「ホーム画面に追加」</strong>(または「アプリをインストール」)を選択</div>' +
+        '<div class="install-step">③ 表示された内容を確認して <strong>「追加」</strong> をタップ</div>';
+    } else {
+      el.installTitle.textContent = "ホーム画面に追加";
+      stepsHtml =
+        '<div class="install-step">スマートフォンでこのページを開き、ブラウザの共有メニューまたは⋮メニューから「ホーム画面に追加」を選択してください。</div>' +
+        '<div class="install-step" style="margin-top:10px; color:var(--muted);">・iPhone → Safariの共有ボタン<br>・Android → Chromeの⋮メニュー</div>';
+    }
+    el.installSteps.innerHTML = stepsHtml;
+    el.installOverlay.classList.add("open");
+  }
+
+  el.installBtn.addEventListener("click", function () {
+    if (deferredInstallPrompt) {
+      deferredInstallPrompt.prompt();
+      deferredInstallPrompt.userChoice.then(function () {
+        deferredInstallPrompt = null;
+        updateInstallBtnVisibility();
+      });
+    } else {
+      showInstallInstructions();
+    }
+  });
+  el.installClose.addEventListener("click", function () { el.installOverlay.classList.remove("open"); });
+  el.installOverlay.addEventListener("click", function (e) { if (e.target === el.installOverlay) el.installOverlay.classList.remove("open"); });
+
+  updateInstallBtnVisibility();
+
+  // ---------- init ----------
+  loadState();
+})();
+</script>
+</body>
+</html>
